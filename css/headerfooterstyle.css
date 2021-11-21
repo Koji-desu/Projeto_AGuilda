@@ -8,6 +8,7 @@
 }
 
 header{
+    min-width: 1440px;
     background-color: #F2EFC7;
     display: flex;
     align-items: center;

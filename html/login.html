@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A Guilda - Login</title>
+    <link rel="stylesheet" href="../css/loginstyle.css">
+    <link rel="stylesheet" href="../css/headerfooterstyle.css">
+
 </head>
 <body>
-    tela de login
+    <header>
+        <a href="#"><img src="../img/Group 22.png" alt="Logo"></a>
+        <h1><a href="#">A GUILDA</a></h1>   
+        
+    <nav class="menu1">
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Jogador</a></li>
+            <li><a href="#">Mestre</a></li>
+            <li><a href="#">Lives</a></li>
+        </ul>
+    </nav>
+    <nav class="menu2">
+        <ul>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+            <li class="entrar"><a href="login.html">Entrar</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+
+        <div class="loginContainer">
+            <h1 class="loginTitle">Boas-Vindas!</h1>
+            <form class="loginForm">
+                <label for="email" class="loginInputEmail">Email</label>
+                <input class="loginInput" type="email" name="email" id="email" placeholder="jogador@aguilda.com.br">
+                <br>
+                
+                <label for="senha" class="loginInputEmail">Senha</label>
+                <input class="loginInput" type="password" id="senha" name="senha" placeholder="*****">
+                
+                <a class="loginReset" href="#">Esqueceu a senha?</a>
+
+                <br><br>
+                <button class="loginSubmit">Logar na Guilda</button>
+
+                <br>
+                <p class="conta">
+                    Não possui conta? 
+                    <a class="cadastro" href="cadastro.html">Cadastre-se!</a>
+                </p>
+
+            </form>
+
+
+        </div>
+        <div class="saibamais">
+            <img src="../img/CapaPost 1.png" alt="">
+
+            <div class="boxSaibaMais">
+                <p class="textSaibaMais">
+                   <b>Sua aventura começa aqui!</b>
+                    
+                    <br>
+                    Conheça mais sobre A Guilda.
+
+                    <br><br>
+
+                    <button class="buttonSaibaMais">Saiba Mais!</button>
+                </p>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+    
 </body>
 </html>
