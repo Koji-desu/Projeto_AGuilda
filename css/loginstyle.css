@@ -93,7 +93,7 @@ main{
     width: 400px;
     height: 100px;
     left: 227px;
-    top: 500px;
+    top: 540px;
     background: #F18805;
     border-radius: 19px;
     font-family: Alegreya;
@@ -115,6 +115,7 @@ main{
 }
 
 .loginReset{
+    padding-top: 5px;
     font-family: Arvo;
     font-style: normal;
     font-weight: normal;
@@ -129,7 +130,7 @@ main{
     width: 554px;
     height: 50px;
     left: 150px;
-    top: 610px;
+    top: 650px;
     font-family: Arvo;
     font-style: normal;
     font-weight: normal;
