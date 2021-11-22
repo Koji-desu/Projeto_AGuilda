@@ -100,6 +100,8 @@ header > nav > ul > li.entrar:hover{
 }
 
 footer{
+    position: absolute;
+    flex-shrink: 0;
     min-width: 1440px;
     background-color: #065580;
     display: flex;

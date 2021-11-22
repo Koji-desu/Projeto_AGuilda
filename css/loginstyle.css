@@ -2,14 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 main{
-
     width: 100%;
     height: 971px;
     left: 0px;
     top: 131px;
     background: #800008;
     min-width: 1440px;
-    
 }
 
 .loginContainer{
@@ -153,7 +151,6 @@ main{
     height: 331px;
     background: rgba(128, 0, 8, 0.54);
     border-radius: 0px 0px 63px 63px;
-
 }
 
 .textSaibaMais{
