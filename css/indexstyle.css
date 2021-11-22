@@ -57,6 +57,7 @@ main{
     border: unset;
     outline: none;
     transition: .05s ease-in-out;
+    
 }
 
 .container button:hover{
@@ -140,8 +141,7 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;    
-    margin-bottom: 56px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .principal{
@@ -162,15 +162,14 @@ main{
     font-size: 44px;
     font-family: 'Germania One', cursive;
     font-weight: 300;
-    color: #F2EFC7;
-   
+    color: hsl(56, 62%, 86%);
     text-align: center;
 }
 
 .comunidade{
     
     width: 500px;
-    margin-left: 150px;
+    margin-left: 50px;
     color: #F2EFC7;
     display: inline-block;
     flex-wrap: wrap;
@@ -202,6 +201,9 @@ main{
     height: 60px;
     border-radius: 12px;
     margin-top: 15px;
+    cursor: pointer;
+    border: unset;
+    outline: none;
     transition: .05s ease-in-out;
 }
 
@@ -214,7 +216,7 @@ main{
     font-weight: 300;
     font-size: 30px;
     color: #F2EFC7;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .monteUmaMesa{
@@ -251,6 +253,9 @@ main{
     height: 60px;
     border-radius: 12px;
     margin-top: 15px;
+    cursor: pointer;
+    border: unset;
+    outline: none;
     transition: .05s ease-in-out;
 }
 
@@ -263,7 +268,7 @@ main{
     font-weight: 300;
     font-size: 30px;
     color: #F2EFC7;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .lives{
@@ -300,6 +305,9 @@ main{
     height: 60px;
     border-radius: 12px;
     margin-top: 15px;
+    cursor: pointer;
+    border: unset;
+    outline: none;
     transition: .05s ease-in-out;
 }
 
@@ -312,7 +320,7 @@ main{
     font-weight: 300;
     font-size: 30px;
     color: #F2EFC7;
-    font-weight: bold;
+    font-weight: normal;
 }
 a{
     text-decoration: none;
