@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Open+Sans&display=swap');
+
 
 main{
     width: 100%;
@@ -136,8 +138,167 @@ main{
 .container3{
     background-color: #800008;
     width: 100%;
-    height: 573px;
+    display: flex;
+    flex-wrap: wrap;    
+    margin-bottom: 56px;
+    padding-bottom: 20px;
 }
 
+.principal{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+}
 
+.principal > img{
+    width: 132px;
+    height: 143px;
+}
+.principal > h2{
+    font-size: 44px;
+    font-family: 'Germania One', cursive;
+    font-weight: 300;
+    color: #F2EFC7;
+   
+    text-align: center;
+}
 
+.comunidade{
+    
+    width: 500px;
+    margin-left: 150px;
+    color: #F2EFC7;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.comunidade > h3{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: -60px;
+}
+
+.comunidade > p{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.comunidade > button{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    background-color: #F18805;
+    text-decoration: none;
+    width: 300px;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.comunidade > button > a{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    font-size: 30px;
+    color: #F2EFC7;
+    font-weight: bold;
+}
+
+.monteUmaMesa{
+    width: 500px;
+    margin-left: 20px;
+    color: #F2EFC7;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.monteUmaMesa > h3{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+   font-size: 30px;
+   
+}
+
+.monteUmaMesa > p{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.monteUmaMesa > button{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    background-color: #F18805;
+    text-decoration: none;
+    width: 300px;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.monteUmaMesa > button > a {
+    ffont-family:'Germania One', cursive;
+    font-weight: 300;
+    font-size: 30px;
+    color: #F2EFC7;
+    font-weight: bold;
+}
+
+.lives{
+    width: 500px;
+    margin-left: 20px;
+    color: #F2EFC7;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 135px;
+}
+
+.lives > h3{
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.lives > p{
+    font-family: 'Germania One', cursive;
+    font-size: 25px;
+    
+    
+}
+
+.lives > button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F18805;
+    text-decoration: none;
+    width: 300px;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.lives > button > a {
+    font-family:'Germania One', cursive;
+    font-weight: 300;
+    font-size: 30px;
+    color: #F2EFC7;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
