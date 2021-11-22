@@ -86,11 +86,21 @@ main section.sessao2 div label{
     margin-left: 90px;
 }
 
-
-    input{
-        accent-color: #2E4057;
-    }
-
+/** ESSA PARTE DO CÓDIGO MUDA O COMPORTAMENTO E COR DAS CHECKBOXS MAS NAO ME PERGUNTE COMO **/
+input {
+    cursor: pointer;
+     appearance: none;
+     background: #1E2B3A;
+     height: 16px;
+     width: 16px;
+     color: white;
+     border-radius: 2px;
+     accent-color: #1E2B3A;
+   }
+   input[type="checkbox"]:checked {
+     appearance:auto;
+   }
+/** ESSA PARTE DO CÓDIGO MUDA O COMPORTAMENTO E COR DAS CHECKBOXS MAS NAO ME PERGUNTE COMO **/
 
 main section.sessao2 input::placeholder {
     color: #F2EFC7;
