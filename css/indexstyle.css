@@ -202,6 +202,11 @@ main{
     height: 60px;
     border-radius: 12px;
     margin-top: 15px;
+    transition: .05s ease-in-out;
+}
+
+.comunidade > button:hover{
+    background-color: #065580;
 }
 
 .comunidade > button > a{
@@ -246,6 +251,11 @@ main{
     height: 60px;
     border-radius: 12px;
     margin-top: 15px;
+    transition: .05s ease-in-out;
+}
+
+.monteUmaMesa > button:hover{
+    background-color: #065580;
 }
 
 .monteUmaMesa > button > a {
@@ -290,6 +300,11 @@ main{
     height: 60px;
     border-radius: 12px;
     margin-top: 15px;
+    transition: .05s ease-in-out;
+}
+
+.lives > button:hover{
+    background-color: #065580;
 }
 
 .lives > button > a {
