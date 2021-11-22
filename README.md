@@ -14,6 +14,6 @@ Colaboradores até o momento:
 
 André de Almeida • @andrenaza ||
 Paulo Moreira    • @prmoreiraf ||
-Tiago Tarcisio   • @ttmajczak ||
+Tiago Tarcisio   • @ttmajczak 
 
 
