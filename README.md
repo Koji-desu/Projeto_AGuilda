@@ -12,8 +12,8 @@ https://www.figma.com/file/Zznq9KTbFxMkwbYXxqh3UH/Wireframes---Projeto-Integrado
 
 Colaboradores até o momento:
 
-André de Almeida • @andrenaza
-Paulo Moreira    • @prmoreiraf
-Tiago Tarcisio   • @ttmajczak
+André de Almeida • @andrenaza ||
+Paulo Moreira    • @prmoreiraf ||
+Tiago Tarcisio   • @ttmajczak 
 
 
