@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    background: #F2EFC7;
+    min-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+}
+
+.menuLeft{
+    position: absolute;
+    width: 292px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background: #ce2020;
+}
+
+.table{
+    position: absolute;
+    width: 856px;
+    height: 1024px;
+    left: 292px;
+    top: 0px;
+}
+
+.menuLeft > button{
+    width: 292px;
+    height: 34px;
+    margin-top: 61px;
+    background: #C4C4C4;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    border: unset;
+    outline: none;
+    text-decoration: none;
+}
+
+.menuLeft > button:hover{
+    background-color: #065580;
+}
+
+.menuLeft > button > a{
+    text-decoration: none;
+}
