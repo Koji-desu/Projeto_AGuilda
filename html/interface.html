@@ -11,7 +11,35 @@
 <body>
 
     <section class="menuLeft">
-        <button><a href="#">Acessar histórico</a></button>
+        <nav class="navLeft">
+            <a href="#"><img src="../img/conversacao.png" alt="Botão Chat"></a>
+            <a href="#"><img src="../img/cards.png" alt=""></a>
+            <a href="#"><img src="../img/blades.png" alt=""></a>
+            <a href="#"><img src="../img/image-gallery.png" alt=""></a>
+            <a href="#"><img src="../img/papiro.png" alt=""></a>
+            <a href="#"><img src="../img/configuracoes.png" alt=""></a>
+
+        </nav>
+        <button class="historico">Acessar histórico</button>
+        <br>
+
+        <label class="chatBoxTexto" for="chatbox"></label>
+        <textarea class="chatBox" name="chatbox" id="chatbox" cols="" rows="" placeholder="Aqui seria o Chat"></textarea>
+
+       <br>
+        <label class="mensagemParaTexto" for="mensagemPara">Para:</label>
+        <select class="mensagemPara" name="mensagemPara" id="mensagemPara">
+            <option value="todos" selected>Todos</option>
+            <option value="j1">Jogador 1</option>
+            <option value="j2">Jogador 2</option>
+            <option value="j3">Jogador 3</option>
+        </select>
+
+        <label for="mensagem"></label>
+        <textarea class="mensagemBox" name="mensagem" id="mensagem" cols="" rows="" placeholder="Digite sua mensagem aqui..."></textarea>
+        <br><br>
+
+        <button class="enviar" type="submit">Enviar</button>
 
     </section>
 

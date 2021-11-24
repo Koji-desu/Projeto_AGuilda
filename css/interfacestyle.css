@@ -17,18 +17,23 @@ body{
     height: 1024px;
     left: 0px;
     top: 0px;
-    background: #ce2020;
 }
 
 .table{
     position: absolute;
     width: 856px;
     height: 1024px;
-    left: 292px;
+    left: 291px;
     top: 0px;
+    border: solid #CD1502 4px;
 }
 
-.menuLeft > button{
+.table img{
+    width: 856px;
+    height: 1024px;
+}
+
+.historico{
     width: 292px;
     height: 34px;
     margin-top: 61px;
@@ -46,10 +51,132 @@ body{
     text-decoration: none;
 }
 
-.menuLeft > button:hover{
-    background-color: #065580;
+.historico:active{
+    background-color: #CD1502;
 }
 
 .menuLeft > button > a{
     text-decoration: none;
 }
+
+.navLeft{
+    position: absolute;
+    width: 291px;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    background: #CD1502;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navLeft > a {
+    text-decoration: none;
+    border: none;
+}
+
+.navLeft > a:hover {
+    background: #0084CC;
+    text-decoration: none;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLeft > a > img {
+    width: 33px;
+    top: 11px;
+    text-decoration: none;
+}
+
+.chatBox{
+    position: absolute;
+    width: 286px;
+    height: 700px;
+    background: #FFFEEB;
+    outline: none;
+    border: none;
+    color: #CD1502;
+    font-size: 25px;
+}
+
+.chatBox:placeholder-shown{
+    text-align:center;
+}
+
+.mensagemBox{
+    margin-top: 700px;
+    margin-left: 8px;
+    width: 276px;
+    height: 104px;
+    background: #FFFEEB;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding-top: 30px;
+    font-family: Alegreya;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #787676;
+}
+
+.mensagemParaTexto{
+    margin-top: 708px;
+    margin-left: 12px;
+    position: absolute;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #787676;
+}
+
+.mensagemPara {
+    position: absolute;
+    margin-top: 708px;
+    margin-left: 50px;
+    width: 65.62px;
+    height: 19px;
+    background: rgba(0, 132, 204, 0.7);
+    border-radius: 8px;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #F2EFC7;
+    border: none;
+    cursor: pointer;
+}
+
+.enviar{
+    position: absolute;
+    width: 122.85px;
+    height: 41.16px;
+    margin-left: 160px;
+    background: #0084CC;
+    border-radius: 9px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #F2EFC7;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.enviar:active{
+    background-color: #CD1502;
+}
+
