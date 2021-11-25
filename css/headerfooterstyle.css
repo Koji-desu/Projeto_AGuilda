@@ -8,9 +8,10 @@
 }
 
 header{
-    min-width: 1440px;
+    min-width: 1092px;
     background-color: #F2EFC7;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 120px;
@@ -20,13 +21,18 @@ header{
     font-weight: bold;
     font-family: 'Germania One', cursive;
 }
-
-header > a > img {
+header > nav > button{
+    display: none
+}
+header > a {
+    display: flex;
+}
+header> a > img {
     margin-left: 1em;
     margin-right: 5px;
 }
 
-header > h1 > a{
+header>a>h1{
     font-family: 'Germania One', cursive;
     font-size: 55px;
     line-height: 87px;
@@ -76,12 +82,12 @@ header > nav.menu1 >li >a{
 }
 
 nav.menu1{
-    padding: 0px 0px 0px 250px;
+   
     font-size: 40px;
 }
 
 nav.menu2{
-    position: absolute;
+    
     right: 30px;
     height: 100px;
 }
@@ -140,4 +146,12 @@ footer nav ul li a {
 
 .menu3 > ul > li:hover{
     background-color: #CD1520;
+}
+
+@media(max-width: 1092px){
+    .menu1 ,.menu2{
+        display: none;
+    }
+    
+
 }
