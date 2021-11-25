@@ -61,6 +61,13 @@ main section.sessao2 div label{
     height: 68px;
 }
 
+.palavraChave{
+    border: none;
+    outline: none;
+    cursor: text;
+    padding-left: 10px;
+}
+
 #buscar{
     width: 256px;
     height: 86px;
@@ -71,6 +78,9 @@ main section.sessao2 div label{
     font-weight: bold;
     font-size: 40px;
     margin-left: 00px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
 }
 
@@ -84,11 +94,19 @@ main section.sessao2 div label{
     font-weight: bold;
     font-size: 40px;
     margin-left: 90px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
+
+#buscar:active , #criarAnuncio:active{
+    background-color: #CD1502;
+}
+
 
 /** ESSA PARTE DO CÓDIGO MUDA O COMPORTAMENTO E COR DAS CHECKBOXS MAS NAO ME PERGUNTE COMO **/
 input {
-    cursor: pointer;
+     cursor: pointer;
      appearance: none;
      background: #1E2B3A;
      height: 16px;
