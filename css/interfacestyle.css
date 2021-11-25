@@ -1,12 +1,12 @@
 body{
-    width: 100%;
+    width: auto;
     height: auto;
     left: 0px;
     top: 0px;
     background: #F2EFC7;
     min-width: 1440px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1 0 auto;
     flex-wrap: wrap;
 }
@@ -37,14 +37,14 @@ body{
     width: 292px;
     height: 34px;
     margin-top: 61px;
-    background: #C4C4C4;
+    background: #807f7f;
     font-family: Alegreya;
     font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
     text-align: center;
-    color: #000000;
+    color: #F2EFC7;
     cursor: pointer;
     border: unset;
     outline: none;
@@ -180,3 +180,214 @@ body{
     background-color: #CD1502;
 }
 
+.diceRoll{
+
+    position: absolute;
+    width: 292px;
+    height: 1024px;
+    left: 1155px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rolagem{
+    position: absolute;
+    width: 290px;
+    height: 674px;
+    background: #FFFEEB;
+    outline: none;
+    border: none;
+    color: #CD1502;
+    font-size: 25px;
+    margin-right: 0;
+}
+
+.rolagem:placeholder-shown{
+    text-align:center;
+}
+
+.limpar {
+    position: absolute;
+    width: 296px;
+    height: 34px;
+    background: #800008;
+    top: 679px;
+    outline: none;
+    border: none;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #F2EFC7;
+    cursor: pointer;
+}
+
+.limpar:active{
+    background-color: #CD1502;
+}
+
+.dice{
+    position: absolute;
+    width: 296px;
+    height: 60px;
+    top: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dice > a {
+    text-decoration: none;
+    border: none;
+}
+
+.dice > a > img {
+    width: 36px;
+    text-decoration: none;
+}
+
+.mais{
+    position: absolute;
+    margin-left: 190px;
+    top: 825px;
+    width: 100px;
+    height: 35px;
+    background: #0084CC;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+    font-family: Alegreya;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #F2EFC7;
+
+}
+
+.mais:active{
+    background-color: #CD1502;
+}
+
+
+.nome{
+    margin-left: 10px;
+    position: absolute;
+    width: 155px;
+    height: 34px;
+    top: 825px;
+    font-family: Alegreya;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #787676;
+    outline: none;
+    border: none;
+    border: 1px solid #C4C4C4;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.tipo{
+    margin-left: 10px;
+    position: absolute;
+    width: 106px;
+    height: 34px;
+    top: 880px;
+    font-family: Alegreya;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #787676;
+    outline: none;
+    border: none;
+    border: 1px solid #C4C4C4;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.mod{
+    margin-left: 135px;
+    position: absolute;
+    width: 50px;
+    height: 34px;
+    top: 880px;
+    font-family: Alegreya;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #787676;
+    outline: none;
+    border: none;
+    border: 1px solid #C4C4C4;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.salvos{
+    position: absolute;
+    margin-left: 210px;
+    top: 880px;
+    width: 70px;
+    height: 35px;
+    background: #CD1502;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+    font-family: Alegreya;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #F2EFC7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.salvosImg{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.salvos:active{
+    background-color: #14CC41;
+}
+
+.rolar{
+    position: absolute;
+    margin-left: 50px;
+    top: 950px;
+    width: 206px;
+    height: 54px;
+    background: #CD1502;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+    font-family: Alegreya;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 23px;
+    text-align: center;
+    color: #F2EFC7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rolar:active{
+    background-color: #14CC41;
+}
