@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Open+Sans&display=swap');
 
-
 main {
     min-width: 1440px;
-    height:auto;
+    height: auto;
     width: 100%;
     top: 131px;
     
 }
+
 
 div {
     margin-bottom: 50px;
@@ -48,10 +48,16 @@ div {
     
 }
 
+.caixaVideos {
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+}
 
-a {
+.caixaVideos > a {
     text-decoration: none;
     color: rgb(6, 85, 128);
     font-family: 'Germania One';
+    display: inline-block;
 }
 

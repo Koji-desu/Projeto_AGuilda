@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Koji-desu/Projeto_AGuilda/issues"
   },
-  "homepage": "https://github.com/Koji-desu/Projeto_AGuilda#readme"
+  "homepage": "https://github.com/Koji-desu/Projeto_AGuilda#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
