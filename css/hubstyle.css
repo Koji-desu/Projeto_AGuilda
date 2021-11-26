@@ -43,7 +43,6 @@ div {
     font-weight: bold;
     font-size: 30px;
     line-height: 50px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     margin-left: 60px;
     
 }
@@ -58,6 +57,12 @@ div {
     text-decoration: none;
     color: rgb(6, 85, 128);
     font-family: 'Germania One';
+    font-family: Arvo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
     display: inline-block;
+    text-align: left;
 }
 

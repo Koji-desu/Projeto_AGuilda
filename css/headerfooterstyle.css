@@ -61,8 +61,6 @@ header nav ul li a {
     align-items: center;
     padding: 0 30px;
     color: inherit;
-    
-    
 }
 
 header > nav.menu1 >li >a{
@@ -81,13 +79,15 @@ header > nav.menu1 >li >a{
     color: #F2EFC7;
 }
 
+.menu4{
+    display:none;
+}
+
 nav.menu1{
-   
     font-size: 40px;
 }
 
 nav.menu2{
-    
     right: 30px;
     height: 100px;
 }
@@ -110,7 +110,7 @@ header > nav > ul > li.entrar:hover{
 footer{
     position: absolute;
     flex-shrink: 0;
-    min-width: 1440px;
+    min-width: 1092px;
     background-color: #065580;
     display: flex;
     align-items: left;
@@ -152,6 +152,5 @@ footer nav ul li a {
     .menu1 ,.menu2{
         display: none;
     }
-    
 
 }

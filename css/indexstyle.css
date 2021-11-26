@@ -4,14 +4,15 @@
 
 main{
     width: 100%;
+    min-width: 1092px;
     height: auto;
     left: 0px;
     top: 131px;
     background: #F2EFC7;
-    min-width: 1440px;
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
+    justify-content: space-between;
 }
 
 .container{
@@ -68,7 +69,7 @@ main{
     position: absolute;
     width: 714.91px;
     height: 384px;
-    left: 675px;
+    left: 610px;
     top: 190px;
 }
 
@@ -132,7 +133,7 @@ main{
     position: absolute;
     width: 496px;
     height: 593.35px;
-    left: 900px;
+    left: 800px;
     top: 800px;
 }
 
