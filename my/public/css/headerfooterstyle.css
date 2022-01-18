@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+
 
 *{
     margin: 0;
@@ -153,4 +156,8 @@ footer nav ul li a {
         display: none;
     }
 
+}
+
+a{
+    text-decoration: none;
 }

@@ -1,17 +1,12 @@
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Guilda - Cadastro</title>
-    <link rel="icon" type="imagem/png" href="../img/Group 22.png" />
-    <link rel="stylesheet" href="../css/headerfooterstyle.css">
-    <link rel="stylesheet" href="../css/cadastrostyle.css">
+<%- include('partials/head'); %>
+<link rel="stylesheet" href="../css/cadastrostyle.css">
+
+
 
 </head>
 <body>
     <header>
-        <a href=""><img src="../public/images/Group 22.png" alt="Logo"></a>
+        <a href=""><img src="../images/Group 22.png" alt="Logo"></a>
         <h1><a href="">A GUILDA</a></h1>   
         
     <nav class="menu1">
@@ -60,7 +55,7 @@
 
         </div>
         <div class="saibamais">
-            <img src="../img/CapaPost 1.png" alt="">
+            <img src="../images/CapaPost 1.png" alt="">
 
             <div class="boxSaibaMais">
                 <p class="textSaibaMais">
@@ -78,17 +73,4 @@
         </div>
 
     </main>
-
-    <footer>
-        <nav class="menu3">
-            <ul>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Diretrizes</a></li>
-                <li><a href="#">Créditos</a></li>
-            </ul>
-        </nav>
-    </footer>
-    
-</body>
-</html>
+    <%- include('partials/footer'); %>

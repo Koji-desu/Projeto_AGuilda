@@ -1,17 +1,11 @@
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Guilda - Login</title>
-    <link rel="icon" type="imagem/png" href="../img/Group 22.png" />
+<%- include('partials/head'); %>
     <link rel="stylesheet" href="../css/loginstyle.css">
-    <link rel="stylesheet" href="../css/headerfooterstyle.css">
+
 
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="../img/Group 22.png" alt="Logo"></a>
+        <a href="index.html"><img src="../images/Group 22.png" alt="Logo"></a>
         <h1><a href="index.html">A GUILDA</a></h1>   
         
     <nav class="menu1">
@@ -34,9 +28,9 @@
 
         <div class="loginContainer">
             <h1 class="loginTitle">Boas-Vindas!</h1>
-            <form class="loginForm">
+            <form action="login" method="post" class="loginForm">
                 <label for="email" class="loginInputEmail">Email</label>
-                <input class="loginInput" type="email" name="email" id="email" placeholder="jogador@aguilda.com.br">
+                <input class="loginInput" type="email" name="email" id="email" placeholder="jogador@aguilda.com">
                 <br>
                 
                 <label for="senha" class="loginInputEmail">Senha</label>
@@ -45,7 +39,7 @@
                 <a class="loginReset" href="#">Esqueceu a senha?</a>
 
                 <br><br>
-                <button class="loginSubmit">Logar na Guilda</button>
+                <button type="submit" class="loginSubmit">Logar na Guilda</button>
 
                 <br>
                 <p class="conta">
@@ -58,7 +52,7 @@
 
         </div>
         <div class="saibamais">
-            <img src="../img/CapaPost 1.png" alt="">
+            <img src="../images/CapaPost 1.png" alt="">
 
             <div class="boxSaibaMais">
                 <p class="textSaibaMais">
@@ -79,16 +73,4 @@
 
     </main>
 
-    <footer>
-        <nav class="menu3">
-            <ul>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Diretrizes</a></li>
-                <li><a href="#">Créditos</a></li>
-            </ul>
-        </nav>
-    </footer>
-    
-</body>
-</html>
+    <%- include('partials/footer'); %>

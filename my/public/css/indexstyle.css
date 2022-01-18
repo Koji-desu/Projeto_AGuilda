@@ -265,7 +265,7 @@ main{
 }
 
 .monteUmaMesa > button > a {
-    ffont-family:'Germania One', cursive;
+    font-family:'Germania One', cursive;
     font-weight: 300;
     font-size: 30px;
     color: #F2EFC7;
