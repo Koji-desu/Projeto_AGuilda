@@ -1,23 +1,17 @@
 {
-  "name": "Projeto_AGuilda",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "projeto-aguilda",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Koji-desu/Projeto_AGuilda.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Koji-desu/Projeto_AGuilda/issues"
-  },
-  "homepage": "https://github.com/Koji-desu/Projeto_AGuilda#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.6",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "express-generator": "^4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }

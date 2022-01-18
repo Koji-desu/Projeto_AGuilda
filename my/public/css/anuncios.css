@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
 }
-
 body{
     background-color: #F2EFC7;
 }
@@ -14,8 +13,12 @@ main{
     
 }
 
+
+
 main section.sessao1{
     margin-bottom: 40px;
+    
+    
 }
 
 main > section > img{
@@ -27,7 +30,6 @@ main section.sessao2{
     padding-left: 60px;
     background-color: #800008;
     padding-bottom: 25px;
-    font-size: 25px;
 }
 
 main section.sessao2>h2{
@@ -36,6 +38,7 @@ main section.sessao2>h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 15px;
     font-size: 55px ;
+
 }
 
 main section.sessao2 h3{
@@ -66,8 +69,8 @@ main section.sessao2 div label{
 }
 
 #buscar{
-    width: 248px;
-    height: 76px;
+    width: 256px;
+    height: 86px;
     border-radius: 20px;
     background-color: #2E4057;
     color: #F2EFC7;
@@ -82,8 +85,8 @@ main section.sessao2 div label{
 }
 
 #criarAnuncio{
-    width: 368px;
-    height: 76px;
+    width: 379px;
+    height: 86px;
     border-radius: 20px;
     background-color: #F18805;
     color: #F2EFC7;
@@ -106,12 +109,11 @@ input {
      cursor: pointer;
      appearance: none;
      background: #1E2B3A;
-     height: 24px;
-     width: 24px;
+     height: 16px;
+     width: 16px;
      color: white;
      border-radius: 2px;
      accent-color: #1E2B3A;
-
    }
    input[type="checkbox"]:checked {
      appearance:auto;
@@ -122,7 +124,7 @@ main section.sessao2 input::placeholder {
     color: #F2EFC7;
     padding: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 26px;
+    font-size: 25px;
     
 }
 
@@ -149,9 +151,9 @@ main section.sessao3 h2{
     line-height: 50px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
     position: absolute;
-    width: 460px;
+    width: 440px;
     height: 150px;
-    left: 850px;
+    left: 800px;
     top: 250px;
     text-align:start;
 }

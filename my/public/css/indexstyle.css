@@ -47,9 +47,10 @@ main{
     top: 540px;
     background: #F18805;
     border-radius: 12px;
-    font-family: 'Germania One', cursive;
+    font-family: Arvo;
     font-style: normal;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 30px;
     line-height: 37px;
     text-align: center;
     color: #F2EFC7;
@@ -115,9 +116,10 @@ main{
     top: 1402px;
     background: #CD1520;
     border-radius: 12px;
-    font-family: 'Germania One', cursive;
+    font-family: Arvo;
     font-style: normal;
-    font-size: 36px;
+    font-weight: bold;
+    font-size: 30px;
     line-height: 37px;
     text-align: center;
     color: #F2EFC7;
@@ -125,9 +127,6 @@ main{
     border: unset;
     outline: none;
     transition: .05s ease-in-out;
-}
-.container2 button:hover{
-    background-color: #F18805;
 }
 
 .container2 .grid{
