@@ -1,0 +1,84 @@
+<%- include('partials/head'); %>
+
+<link rel="stylesheet" href="../css/anuncios.css">
+
+<%- include('partials/header') %>
+
+<main>
+    <section class="sessao1">
+        <img src="../images/como-jogar-o-sistema-de-tormenta-rpg 1 (1).png" alt="">
+        <p class="textoBranco">Encontre diversas pessoas que já estão prontas para jogar. Ou monte seu anúncio para achar o seu grupo de jogo!</p>
+    </section>
+
+    <section class="sessao2">
+        <h2>Encontre seu grupo</h2><br>
+        <form class="encontreGrupo">
+         <div>
+          <input class="palavraChave" style="color: #F2EFC7; font-size: 25px; background-color: #1E2B3A;" type="search" name="busca" id="busca" placeholder="Busque por palavras-chave">
+          <br><br>
+        </div>
+    <div>
+          <input type="checkbox" name="novosJogadores" id="novosJogadores">
+          <label for="novosJogadores">Apenas novos jogadores</label>
+          <br><br>
+
+          <h3>Frequência</h3>
+         
+    </div>
+
+     <div>
+          <input type="checkbox" name="umaVez" id="umaVez">
+          <label for="umaVez">Uma vez</label>
+
+          <input type="checkbox" name="semanal" id="semanal">
+          <label for="semanal">Semanal</label>
+
+          <input type="checkbox" name="duasSemanas" id="duasSemanas">
+          <label for="duasSemanas">A cada duas semanas</label>
+
+          <input type="checkbox" name="mensal" id="mensal">
+          <label for="mensal">Mensal</label>
+          <br><br>
+          <span></span>
+     </div>
+
+          <h3>Dias</h3>
+            <div>
+          <input type="checkbox" name="domingo" id="domingo">
+          <label for="domingo">Domingo</label>
+
+          <input type="checkbox" name="segunda" id="segunda">
+          <label for="segunda">Segunda</label>
+
+          <input type="checkbox" name="terca" id="terca">
+          <label for="terca">Terça</label>
+
+          <input type="checkbox" name="quarta" id="quarta">
+          <label for="quarta">Quarta</label>
+
+          <input type="checkbox" name="quinta" id="quinta">
+          <label for="quinta">Quinta</label>
+
+          <input type="checkbox" name="sexta" id="sexta">
+          <label for="sexta">Sexta</label>
+
+          <input type="checkbox" name="sabado" id="sabado">
+          <label for="sabado">Sábado</label>
+          <br><br>
+        </div>
+
+          <input type="submit" value="Buscar" name="buscar" id="buscar">
+          
+          <input type="submit" value="Criar Anúncio" name="criarAnuncio" id="criarAnuncio">
+
+          
+
+        </form>
+    </section>
+
+    <section class="sessao3">
+        <h2>Lista de Anuncios</h2>
+    </section>
+</main>
+
+<%- include('partials/footer'); %>

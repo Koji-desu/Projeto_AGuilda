@@ -34,6 +34,12 @@ const controller = {
         } else {
             res.render('cadastro', {erros: erros.mapped(), old: req.body})
         }
+    },
+    anuncios: (req, res)=>{
+        res.render('anuncios')
+    },
+    hub: (req, res)=>{
+        res.render('hub')
     }
 }
 
