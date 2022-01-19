@@ -1,6 +1,23 @@
 [
     {
-    "email": "pdigo153@gmail.com",
-    "senha": "123456"
+        "id": 0,
+        "email": "pdigo153@gmail.com",
+        "senha": "123456"
+    },
+    {
+        "email": "luis@pizzariafantastica.com",
+        "senha": [
+            "12341234",
+            "12341234"
+        ],
+        "id": 1
+    },
+    {
+        "email": "luis@pizzariafantastica.com",
+        "senha": [
+            "12341234",
+            "12341234"
+        ],
+        "id": 2
     }
 ]
