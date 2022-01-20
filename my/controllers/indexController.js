@@ -2,8 +2,15 @@ const usuarios = require('../database/usuarios.json')
 const {check, validationResult, body} = require('express-validator')
 
 const controller = {
-    index: (req, res)=>{ 
-        res.render('index')
+    logged: (req, res)=>{
+        if(req.session.usuario != undefined){
+            return res.render('Logged/indexLogged', {usuario: usuarios})
+        }else{
+            return res.render('index')
+        }
+            
+    
+    
     },
     cadastro: (req,res)=>{ 
         res.render('cadastro')
@@ -25,22 +32,18 @@ const controller = {
 
         return res.redirect('/')
     },
-    cadastrar: (req, res)=>{
-        let erros = validationResult(req)
+    
 
-        // caso não há erros retornar a home
-        if(erros.isEmpty()){
-            return res.redirect('/')
-        } else {
-            res.render('cadastro', {erros: erros.mapped(), old: req.body})
-        }
-    },
     anuncios: (req, res)=>{
         res.render('anuncios')
     },
     hub: (req, res)=>{
         res.render('hub')
+    },
+    logout: (req, res)=>{
+        req.session.usuario = undefined
+        res.redirect('/')
     }
 }
 
-module.exports = controller
+    module.exports = controller

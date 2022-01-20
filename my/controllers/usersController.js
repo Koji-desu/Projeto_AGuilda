@@ -8,10 +8,10 @@ const controller = {
         if(!erros.isEmpty()){
             return res.render('cadastro', {erros: erros.mapped()})
         }
-
+        const nome = req.body.nome
         const email = req.body.email;
         const senha = req.body.senha;
-        const usuario = {email, senha}
+        const usuario = {nome, email, senha}
 
         usuario.id = users[users.length -1].id +1;
 
