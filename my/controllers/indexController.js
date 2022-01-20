@@ -4,12 +4,10 @@ const {check, validationResult, body} = require('express-validator')
 const controller = {
     logged: (req, res)=>{
         if(req.session.usuario != undefined){
-            return res.render('Logged/indexLogged', {usuario: usuarios})
+            return res.render('Logged/indexLogged', {usuarios})
         }else{
-            return res.render('index')
+            return res.render('index', {usuarios})
         }
-            
-    
     
     },
     cadastro: (req,res)=>{ 
