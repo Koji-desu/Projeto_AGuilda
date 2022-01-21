@@ -12,6 +12,11 @@ const validacoes = [
    .notEmpty().withMessage("Deve ser preenchido")
    .bail()
    .isLength({min:8}).withMessage("A senha deve ter no minímo 8 caracteres")
+,
+    check('nome')
+    .notEmpty().withMessage("Deve ser preenchido")
+    .bail()
+    .isLength({min:3}).withMessage("No minímo 3 caracteres")
     
 ]
 

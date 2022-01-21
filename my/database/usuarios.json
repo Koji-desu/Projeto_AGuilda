@@ -1,38 +1,20 @@
 [
     {
         "nome": "Pablo",
-        "email": "pdig22o153@gmail.com",
-        "senha": "90909090]",
-        "id": 3
-    },
-    {
-        "nome": "vinicus",
         "email": "vinicius@lco.com",
-        "senha": "vinicius@lco.com",
-        "id": 4
+        "hash": "$2a$10$paCPKI51WIVPFJA5X4cApO8nLg4ohTzHpealZxvH3uFpm0zZUlCfa",
+        "id": null
     },
     {
-        "nome": "KKKKKKKKKKK",
-        "email": "KKKKKKKKKKK@KKKKKKKKKKK.com",
-        "senha": "KKKKKKKKKKK",
-        "id": 5
-    },
-    {
-        "nome": "Pablo",
-        "email": "luis@pizzariafantastica.com",
-        "senha": "luis@pizzariafantastica.com",
-        "id": 6
-    },
-    {
-        "nome": "Elvis",
+        "nome": "vinicius@lco.com",
         "email": "vinicius@lco.com",
-        "senha": "vinicius@lco.com",
-        "id": 7
+        "hash": "$2a$10$rEqzwbR4XmviANLcGbpdVufklsfgqTyMQ0W4WXNtcnnwDbhV/VLHq",
+        "id": 1
     },
     {
-        "nome": "Vinicius",
+        "nome": "34",
         "email": "vinicius@lco.com",
-        "hash": "$2a$10$2qtnvzEoaZoKQA4NZfPdUOaHZhapbtAZZy17QE.4icZXVSt0jytW6",
-        "id": 8
+        "hash": "$2a$10$GE1T7QpWe3V1dE4EcfvZ8e6KX2dTYu/uajdYVr/DB5daQu9.qUa.u",
+        "id": 2
     }
 ]
