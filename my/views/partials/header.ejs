@@ -1,5 +1,8 @@
 </head>
 
+<% if(typeof usuarios=== 'undefined'){ %>
+
+
 <body>
     <header>
         <a href="/">
@@ -24,3 +27,34 @@
         <button>☰</button>
         </nav>
     </header>
+
+</head>
+<% } else { %>
+<body>
+    <header>
+        <a href="/">
+            <img src="../images/Group 22.png" alt="Logo">
+            <h1>A GUILDA</h1>
+        </a>
+        <nav class="menu1">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Jogador</a></li>
+                <li><a href="#">Mestre</a></li>
+                <li><a href="/hub">Lives</a></li>
+            </ul>
+        </nav>
+        <nav class="menu2">
+            <ul>
+                <li>
+               <a href="#">  Olá  <%= usuarios.nome %></a>
+                </li>
+                <li class="entrar"><a href="/logout">Sair</a></li>
+            </ul>
+        </nav>
+        <nav class="menu3">
+        <button>☰</button>
+        </nav>
+    </header>
+
+    <% } %>

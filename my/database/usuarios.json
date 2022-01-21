@@ -16,5 +16,41 @@
         "email": "vinicius@lco.com",
         "hash": "$2a$10$GE1T7QpWe3V1dE4EcfvZ8e6KX2dTYu/uajdYVr/DB5daQu9.qUa.u",
         "id": 2
+    },
+    {
+        "nome": "Pablo",
+        "email": "pdigo153@gmail.com",
+        "hash": "$2a$10$mf7R0GTqMBWt15YYEkCfheXMXWdwK3gTVAhqVU50tfcckBHA8DeTi",
+        "id": 3
+    },
+    {
+        "nome": "Elvis",
+        "email": "cvnmiafiam2i@gmail.com",
+        "hash": "$2a$10$l5onuro8nGs3Ubbn4GXqF.e5auQXS.wPcNia6R1W2/FqVwhgSVD16",
+        "id": 4
+    },
+    {
+        "nome": "Pablo Rodrigo Reis Gomes",
+        "email": "j90adrfqa9idv8iserrgwnkl@gmail.com",
+        "hash": "$2a$10$MELVAIygHMYUaxOr.Lp26.cFx/YUbhxa2KqCOalbYaHgBQ6m1Wo7.",
+        "id": 5
+    },
+    {
+        "nome": "Pablo Rodrigo Reis Gomes",
+        "email": "pdigo153@gmail.com",
+        "hash": "$2a$10$sjNAIuY6vvXrzCso5kzOY.8TFj3VMD/Sm9U4vjUgJX.3AXApqiFBG",
+        "id": 6
+    },
+    {
+        "nome": "koji77bladegrande",
+        "email": "pdigo2253@gmail.com",
+        "hash": "$2a$10$4RWZQiSW5a7XiChSTkL55.DYbVIiCnyhozQRv4TPUoj2D/8QtIpFG",
+        "id": 7
+    },
+    {
+        "nome": "koji77bladegrande",
+        "email": "PABLOREISGAMEPLAYS@GMAIL.COM",
+        "hash": "$2a$10$EYXszu5M0z3KzpGRhOBu7u9D9acfU65gZt.z7zkGxFlN.XV0Cd4UG",
+        "id": 8
     }
 ]

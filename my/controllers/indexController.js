@@ -1,12 +1,13 @@
 const usuarios = require('../database/usuarios.json')
 const {check, validationResult, body} = require('express-validator')
+const bcrypt = require('bcryptjs')
 
 const controller = {
     logged: (req, res)=>{
         if(req.session.usuario != undefined){
-            return res.render('Logged/indexLogged', {usuarios})
+            return res.render('index', {usuarios: req.session.usuario})
         }else{
-            return res.render('index', {usuarios})
+            return res.render('index')
         }
     
     },
@@ -18,9 +19,10 @@ const controller = {
     },
     logar: (req, res)=>{
         const {email, senha} = req.body
-        const usuario = usuarios.find(u => u.email == email && u.senha == senha)
+        const usuario = usuarios.find(u => u.email == email)
+        const senhaCorreta= bcrypt.compareSync(senha, usuario.hash)
 
-        if(usuario === undefined){
+        if(usuario === undefined || !senhaCorreta){
             return res.send("email ou senha incorreto, tente novamente!")
         }
 
@@ -33,10 +35,10 @@ const controller = {
     
 
     anuncios: (req, res)=>{
-        res.render('anuncios')
+        res.render('anuncios', {usuarios: req.session.usuario})
     },
     hub: (req, res)=>{
-        res.render('hub')
+        res.render('hub', {usuarios: req.session.usuario})
     },
     logout: (req, res)=>{
         req.session.usuario = undefined
