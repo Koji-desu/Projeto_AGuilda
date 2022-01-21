@@ -28,5 +28,11 @@
         "email": "vinicius@lco.com",
         "senha": "vinicius@lco.com",
         "id": 7
+    },
+    {
+        "nome": "Vinicius",
+        "email": "vinicius@lco.com",
+        "hash": "$2a$10$2qtnvzEoaZoKQA4NZfPdUOaHZhapbtAZZy17QE.4icZXVSt0jytW6",
+        "id": 8
     }
 ]

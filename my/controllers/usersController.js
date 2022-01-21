@@ -1,6 +1,7 @@
 const fs = require('fs')
 const users = require('../database/usuarios.json')
 const {validationResult} = require('express-validator')
+const bcrypt = require('bcryptjs')
 
 const controller = {
     user: (req, res)=>{
@@ -11,7 +12,8 @@ const controller = {
         const nome = req.body.nome
         const email = req.body.email;
         const senha = req.body.senha;
-        const usuario = {nome, email, senha}
+        const hash = bcrypt.hashSync(senha, 10)
+        const usuario = {nome, email, hash}
 
         usuario.id = users[users.length -1].id +1;
 
