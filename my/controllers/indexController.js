@@ -4,9 +4,14 @@ const bcrypt = require('bcryptjs')
 
 const controller = {
     logged: (req, res)=>{
+
+        // Capturar se o usuario está com uma sessão ativa
         if(req.session.usuario != undefined){
+
+        // Se sim enviar informações para a view para assim imprimir o header correto. Mais info em partials/Header
             return res.render('index', {usuarios: req.session.usuario})
-        }else{
+        }else{ 
+            // Caso não tenha uma sessão ativa renderizar a view padrão
             return res.render('index')
         }
     
@@ -18,11 +23,11 @@ const controller = {
         res.render('login')
     },
     logar: (req, res)=>{
-        const {email, senha} = req.body
-        const usuario = usuarios.find(u => u.email == email)
-        const senhaCorreta= bcrypt.compareSync(senha, usuario.hash)
+        const {email, senha} = req.body // Capturar as informações digitadas no body pelo usuario
+        const usuario = usuarios.find(u => u.email == email) // Verificar no banco de dados se existe algum email identico ao que foi digitado no body
+        const senhaCorreta= bcrypt.compareSync(senha, usuario.hash) // fazer a comparação entre a senha digitada e os hashs do banco de dados
 
-        if(usuario === undefined || !senhaCorreta){
+        if(usuario === undefined || !senhaCorreta){ // Caso o usuario não exista, enviar uma mensagem derro (!!!temporario!!!)
             return res.send("email ou senha incorreto, tente novamente!")
         }
 
@@ -41,7 +46,7 @@ const controller = {
         res.render('hub', {usuarios: req.session.usuario})
     },
     logout: (req, res)=>{
-        req.session.usuario = undefined
+        req.session.usuario = undefined // definir a session como indefinida quando o usuario clicar em logout e redirecionar ele a home
         res.redirect('/')
     }
 }
