@@ -52,5 +52,11 @@
         "email": "PABLOREISGAMEPLAYS@GMAIL.COM",
         "hash": "$2a$10$EYXszu5M0z3KzpGRhOBu7u9D9acfU65gZt.z7zkGxFlN.XV0Cd4UG",
         "id": 8
+    },
+    {
+        "nome": "Julio",
+        "email": "julio123@email.com",
+        "hash": "$2a$10$W01CeF0.kvf8ApVPrF9V2uAJGS6n8K1Cny4q3lpweT/fyiZO8F61O",
+        "id": 9
     }
 ]
