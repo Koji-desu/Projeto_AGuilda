@@ -64,5 +64,11 @@
         "email": "vinicius2@email.com",
         "hash": "$2a$10$wdHRukx.d6usbAwIwoE8z.JcEucIS7OAQ6gmkN9rhdRgSMLMUvw9.",
         "id": 10
+    },
+    {
+        "nome": "André",
+        "email": "andre@email.com",
+        "hash": "$2a$10$YlMAzkc.kDERSrNQ8C7hs.mIT34Om.wAJmVjs8BfuTjJm7CuVG5/q",
+        "id": 11
     }
 ]
