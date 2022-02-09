@@ -58,5 +58,11 @@
         "email": "julio123@email.com",
         "hash": "$2a$10$W01CeF0.kvf8ApVPrF9V2uAJGS6n8K1Cny4q3lpweT/fyiZO8F61O",
         "id": 9
+    },
+    {
+        "nome": "Pablo",
+        "email": "vinicius2@email.com",
+        "hash": "$2a$10$wdHRukx.d6usbAwIwoE8z.JcEucIS7OAQ6gmkN9rhdRgSMLMUvw9.",
+        "id": 10
     }
 ]
