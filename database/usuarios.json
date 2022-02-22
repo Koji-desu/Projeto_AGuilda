@@ -70,5 +70,11 @@
         "email": "andre@email.com",
         "hash": "$2a$10$YlMAzkc.kDERSrNQ8C7hs.mIT34Om.wAJmVjs8BfuTjJm7CuVG5/q",
         "id": 11
+    },
+    {
+        "nome": "Elvis",
+        "email": "luis@pizzariafantastica.com",
+        "hash": "$2a$10$bJ7M2ftnD2J4N/6v.6h0IOjv0caAQgNeDnOfuT.N42YTxF00KLKGS",
+        "id": 12
     }
 ]
