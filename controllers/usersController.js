@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs')
 const controller = {
     user: (req, res)=>{
         const erros = validationResult(req); // Validar os dados digitados
-        if(!erros.isEmpty()){ // Caso há eros renderizar a view e mapeando os erros
+        if(!erros.isEmpty()){ // Caso há erros renderizar a view e mapeando os erros
             return res.render('cadastro', {erros: erros.mapped()})
         }
 

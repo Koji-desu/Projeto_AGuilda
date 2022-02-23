@@ -1,56 +1,57 @@
 <%- include('partials/head'); %>
-<link rel="stylesheet" href="../css/cadastrostyle.css">
+    <link rel="stylesheet" href="../css/cadastrostyle.css">
 
-<%- include('partials/header') %>
+    <%- include('partials/header') %>
 
-    <main>
+        <main>
+            <div class="container">
+                <div class="loginContainer">
+                    <h1 class="loginTitle">Junte-se à Guilda!</h1>
+                    <form action="cadastro" method="post" class="loginForm">
+                        <label for="nome" class="loginInputEmail">Nome</label>
+                        <input class="loginInput" type="text" id="nome" name="nome" placeholder="nome">
+                        <br>
 
-        <div class="loginContainer">
-            <h1 class="loginTitle">Junte-se à Guilda!</h1>
-            <form action="cadastro" method="post" class="loginForm" >
-                <label for="nome" class="loginInputEmail">Nome</label>
-                <input class="loginInput" type="text" id="nome" name="nome" placeholder="nome">
-                <br>
-                
-                <label for="email" class="loginInputEmail">Email</label>
-                <input class="loginInput" type="email" name="email" id="email" placeholder="jogador@aguilda.com.br">
-                <br>
-               
-              
-
-                  <label for="senha" class="loginInputEmail">Senha</label>
-                <input class="loginInput" type="password" id="senha" name="senha" placeholder="********">
-                -
-                <br><br>
-                <button type="submit" class="loginSubmit">Cadastrar</button>
-            </form>
-                <br>
-                <p class="conta">
-                   Já possui uma conta?
-                    <a class="cadastro" href="/login">Faça o login!</a>
-                </p>
-
-            
+                        <label for="email" class="loginInputEmail">Email</label>
+                        <input class="loginInput" type="email" name="email" id="email"
+                            placeholder="jogador@aguilda.com.br">
+                        <br>
 
 
-        </div>
-        <div class="saibamais">
-            <img src="../images/CapaPost 1.png" alt="">
 
-            <div class="boxSaibaMais">
-                <p class="textSaibaMais">
-                   <b>Sua aventura começa aqui!</b>
-                    
+                        <label for="senha" class="loginInputEmail">Senha</label>
+                        <input class="loginInput" type="password" id="senha" name="senha" placeholder="********">
+                        -
+                        <br><br>
+                        <button type="submit" class="loginSubmit">Cadastrar</button>
+                    </form>
                     <br>
-                    Conheça mais sobre A Guilda.
+                    <p class="conta">
+                        Já possui uma conta?
+                        <a class="cadastro" href="/login">Faça o login!</a>
+                    </p>
 
-                    <br><br>
 
-                    <button class="buttonSaibaMais">Saiba Mais!</button>
-                </p>
 
+
+                </div>
+                <div class="saibamais">
+                    <!-- <img src="../images/CapaPost 1.png" alt=""> -->
+
+                    <div class="boxSaibaMais">
+                        <p class="textSaibaMais">
+                            <b>Sua aventura começa aqui!</b>
+
+                            <br>
+                            Conheça mais sobre A Guilda.
+
+                            <br><br>
+
+                            <button class="buttonSaibaMais">Saiba Mais!</button>
+                        </p>
+
+                    </div>
+                </div>
             </div>
-        </div>
-
-    </main>
-    <%- include('partials/footer'); %>
+        </main>
+        <%- include('partials/footer'); %>
