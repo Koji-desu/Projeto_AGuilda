@@ -54,13 +54,13 @@ body, html {
 .loginForm{
     display: flex;
     flex-direction: column;
-    align: center;
+    
     justify-content: center;
     margin-top: 30px;
 }
 
 .loginInputEmail{
-    align: left;
+    
     width: 460px;
     height: 56px;
     display:block;
@@ -89,7 +89,7 @@ body, html {
 }
 
 .loginSubmit{
-    align: center;
+    
     width: 400px;
     height: 100px;
     display:block;

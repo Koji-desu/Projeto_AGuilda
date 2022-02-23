@@ -1,32 +1,37 @@
 const fs = require('fs')
-const users = require('../database/usuarios.json')
+const {Usuario} = require('../models')
 const {validationResult} = require('express-validator')
+const Sequelize = require('sequelize')
+const Op = Sequelize.Op
 const bcrypt = require('bcryptjs')
 
 const controller = {
-    user: (req, res)=>{
+    user: async (req, res)=>{
         const erros = validationResult(req); // Validar os dados digitados
         if(!erros.isEmpty()){ // Caso há erros renderizar a view e mapeando os erros
             return res.render('cadastro', {erros: erros.mapped()})
         }
 
         // Capturar os dados digitados no form
-        const nome = req.body.nome
-        const email = req.body.email;
-        const senha = req.body.senha;
+        const {nome, email, senha} = req.body
         const hash = bcrypt.hashSync(senha, 10)
-        const usuario = {nome, email, hash}
+       /* const usuario = {nome, email, hash} */
 
 
-        // Dar um ID para o novo membro
-        usuario.id = users[users.length -1].id +1;
+        const resultado = await Usuario.create({
+            nome,
+            email,
+            senha
+        });
+
+        console.log(resultado)
 
         // Dar push para o banco de dados do novo usuario
-        users.push(usuario)
+        /* Usuario.push(usuario)
 
-        fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(users, null, 4))
+        fs.writeFileSync(__dirname + "/../database/usuarios.json", JSON.stringify(Usuario, null, 4))
 
-
+        */
         // Após a criação da nova conta levar o usuario para a tela de login
         res.redirect('/login')
     }
