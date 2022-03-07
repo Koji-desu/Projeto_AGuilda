@@ -36,6 +36,7 @@ main{
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
     padding-left: 2%;
+    width:50%
 }
 
 .container button{
@@ -56,8 +57,9 @@ main{
     border: unset;
     outline: none;
     transition: .05s ease-in-out;
-    margin-left: 10%;
-    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-top: 10%;
+    
 }
 
 .container button:hover{
@@ -67,8 +69,7 @@ main{
 .container .map{
     width: 714.91px;
     height: 384px;
-    left: 610px;
-    top: 190px;
+    padding-right: 2%;
 }
 
 .container2{
