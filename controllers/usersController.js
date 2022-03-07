@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {Usuario} = require('../models')
+const {Usuario} = require('../models/Usuario')
 const {validationResult} = require('express-validator')
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op

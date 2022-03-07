@@ -37,7 +37,9 @@ module.exports = (sequelize, dataTypes)=>{
         timestamps:false,
         tableName: 'personagens'
     })
-    Personagem.associate = (models)=>{
+    
+        Personagem.associate = (models)=>{
         Personagem.belongsTo(models.Usuario, {foreignKey: 'usuarios_id', as: 'personagem_usuario'})
     }
+    
 }

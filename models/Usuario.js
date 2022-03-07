@@ -24,8 +24,10 @@ module.exports = (sequelize, dataTypes)=>{
         tableName: 'usuarios',
         timestamps:false
     })
-    Usuario.associate = (models)=>{
+
+        Usuario.associate = (models)=>{
         Usuario.hasMany(models.Personagem, {foreignKey: 'usuarios_id', as: 'usuario_personagens'})
         Usuario.hasMany(models.Resposta, {foreignKey: 'usuarios_id', as: 'usuario_resposta'})
     }
+    
 }

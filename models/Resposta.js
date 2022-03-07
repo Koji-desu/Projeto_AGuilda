@@ -15,8 +15,10 @@ module.exports = (sequelize, dataTypes)=>{
         tableName: 'respostas'
     })
 
-    Resposta.associate = (models)=>{
+
+        Resposta.associate = (models)=>{
         Resposta.belongsTo(models.Usuario, {foreignKey: 'usuarios_id', as: 'resposta_usuario'})
         Resposta.hasMany(models.Anuncio, {foreignKey: 'anuncios_id', as: 'resposta_anuncio'})
     }
+    
 }
