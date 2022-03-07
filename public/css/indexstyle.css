@@ -76,26 +76,17 @@ main{
     width: 100%;
     height: 786px;
     margin-bottom: 56px;
+    padding-left: 2%;
+    padding-top: 5%;
+    display:flex;
+    justify-content: space-between;
+    padding-right: 2%;
 }
 
-.container2 img, p, button{
-    align: center;
-}
 
-.container2 img{
-    position: absolute;
-    width: 565px;
-    height: 88px;
-    left: 155px;
-    top: 800px;
-}
 
 .container2 p{
-    position: absolute;
-    width: 692px;
-    height: 389px;
-    left: 92px;
-    top: 900px;
+   
     font-family: Alegreya;
     font-style: normal;
     font-weight: 800;
@@ -104,14 +95,13 @@ main{
     text-align: center;
     color: #DDE6F1;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-self: center;
 }
 
 .container2 button{
-    position: absolute;
+    
     width: 362px;
     height: 62px;
-    left: 250px;
-    top: 1402px;
     background: #CD1520;
     border-radius: 12px;
     font-family: Arvo;
@@ -125,14 +115,31 @@ main{
     border: unset;
     outline: none;
     transition: .05s ease-in-out;
+    align-self: center;
+ 
 }
 
-.container2 .grid{
-    position: absolute;
+.cont2-part1 {
+    display: flex;
+    flex-direction:column;
+    padding-right: 6%;
+    justify-content: space-around;
+    padding-bottom: 2%;
+}
+
+.cont2-part1 img{
+    display:flex;
+    width:50%;
+    align-self: center;
+}
+
+ .gridgame{
+    
     width: 496px;
     height: 593.35px;
-    left: 800px;
-    top: 800px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
 }
 
 .container3{
@@ -141,6 +148,7 @@ main{
     display: flex;
     flex-wrap: wrap;    
     padding-bottom: 40px;
+    justify-content: space-around
 }
 
 .principal{
@@ -167,15 +175,13 @@ main{
 
 .comunidade{
     
-    width: 500px;
-    margin-left: 50px;
+    
     color: #F2EFC7;
-    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 75px;
+ 
 }
 
 .comunidade > h3{
@@ -219,15 +225,15 @@ main{
 }
 
 .monteUmaMesa{
-    width: 500px;
-    margin-left: 20px;
+    
     color: #F2EFC7;
     display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 75px;
+    
+    padding: 0 2% 0 2%;
 }
 
 .monteUmaMesa > h3{
@@ -271,15 +277,14 @@ main{
 }
 
 .lives{
-    width: 500px;
-    margin-left: 20px;
+  
     color: #F2EFC7;
     display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 135px;
+   
 }
 
 .lives > h3{
@@ -321,6 +326,16 @@ main{
     color: #F2EFC7;
     font-weight: normal;
 }
+
+.encontrarNaGuilda{
+    display:flex;
+    flex-direction:row;
+    align-items: flex-end;
+    padding-top: 5%;
+   
+}
+
+
 a{
     text-decoration: none;
 }
