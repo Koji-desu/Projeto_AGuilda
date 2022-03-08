@@ -89,7 +89,6 @@ body, html {
 
 .loginSubmit{
     
-    width: 50%;
     background: #F18805;
     border-radius: 19px;
     font-family: Alegreya;
@@ -139,7 +138,7 @@ body, html {
     display: flex;
     align-self: center;
     justify-content: space-between;
-    margin: 10% 5% 10% 5%;
+    margin: 7% 5% 10% 5%;
     font-family: Arvo;
     font-style: normal;
     font-weight: normal;
@@ -154,14 +153,18 @@ body, html {
     color: #FA7800;
 }
 
+.cadastro:hover{
+    color: #CD1520
+}
+
 .boxSaibaMais{
-    height: 45%;
     width: 100%;
     position: absolute;
     bottom: 0;
     padding: 15px;
     background: rgba(128, 0, 8, 0.54);
     border-radius: 0px 0px 63px 63px;
+   
 
 }
 
@@ -174,7 +177,7 @@ body, html {
 }
 
 .buttonSaibaMais{
-    width: 290px;
+    width: 80%;
     height: 62px;
     background: #CD1520;
     border-radius: 12px;
@@ -189,9 +192,37 @@ body, html {
     outline: none;
     cursor: pointer;
     transition: .05s ease-in-out;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 5%
 }
 
 .buttonSaibaMais:hover{
     background: #F18805;
     color: #2E4057;
+}
+
+
+@media(max-width: 1092px){
+    .saibamais{display: none}
+    .conta{margin: 2% 5% 10% 5%}
+    .loginContainer{width: 80%;}
+    .container{justify-content: space-around;}
+}
+
+@media(max-width: 460px){
+    .loginSubmit{width:100%;}
+}
+
+@media(max-width: 445px){
+    .conta{display:none}
+    .loginContainer{height: auto; width: 110%;}
+}
+
+@media(max-width: 400px){
+    .container{padding: 3%}
+    footer nav ul li{font-size: small;}
 }
