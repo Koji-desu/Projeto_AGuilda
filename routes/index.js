@@ -15,5 +15,6 @@ router.post('/login', controllerUsers.logar)
 router.get('/logout', controllerIndex.logout)
 router.get('/anuncios', controllerIndex.anuncios)
 router.get('/hub', controllerIndex.hub)
+router.get('/perfil', controllerIndex.perfil)
 
 module.exports = router;

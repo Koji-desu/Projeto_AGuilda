@@ -32,6 +32,9 @@ const controller = {
     logout: (req, res)=>{
         req.session.usuario = undefined // definir a session como indefinida quando o usuario clicar em logout e redirecionar ele a home
         res.redirect('/')
+    },
+    perfil: (req, res)=>{
+        res.render('perfil', {usuarios: req.session.usuario})
     }
 }
 
