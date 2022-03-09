@@ -25,6 +25,10 @@
                         
                         <button type="submit" class="loginSubmit">Cadastrar</button>
                     </form>
+                    
+                    <% if(locals.cadastroError){ %>
+                        <script>window.alert('digite um email e senha válido')</script>
+                    <%    } %>
                    
                     <p class="conta">
                         Já possui uma conta?

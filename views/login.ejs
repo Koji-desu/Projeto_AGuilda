@@ -13,7 +13,12 @@
                 
                 <label for="senha" class="loginInputEmail">Senha</label>
                 <input class="loginInput" type="password" id="senha" name="senha" placeholder="*****">
-                
+                <% if(locals.loginError){ %>
+                    <script>window.alert('Email ou Senha incorreto, tente novamente')</script>
+                <%    } %>
+    
+
+
                 <a class="loginReset" href="#">Esqueceu a senha?</a>
 
                 <button type="submit" class="loginSubmit">Logar na Guilda</button>
@@ -25,7 +30,7 @@
                 </p>
 
             </form>
-
+            
 
         </div>
         <div class="saibamais">

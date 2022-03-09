@@ -22,27 +22,7 @@ const controller = {
     login: (req, res)=>{
         res.render('login')
     },
-    logar: (req, res)=>{
-        const {email, senha} = req.body // Capturar as informações digitadas no body pelo usuario
-        const usuario = usuarios.find(u => u.email == email) // Verificar no banco de dados se existe algum email identico ao que foi digitado no body
-        if(usuario === undefined ){ // Caso o usuario não exista, enviar uma mensagem derro (!!!temporario!!!)
-            return res.send("email ou senha incorreto, tente novamente!")
-        }
-        
-        const senhaCorreta= bcrypt.compareSync(senha, usuario.hash) // fazer a comparação entre a senha digitada e os hashs do banco de dados
-
-        if(!senhaCorreta){ // Caso o usuario não exista, enviar uma mensagem derro (!!!temporario!!!)
-            return res.send("email ou senha incorreto, tente novamente!")
-        }
-
-        // Caso o usuario esteja cadastrado dar uma session para ele e redirecionar ele para a Home
-
-        req.session.usuario = usuario
-
-        return res.redirect('/')
-    },
     
-
     anuncios: (req, res)=>{
         res.render('anuncios', {usuarios: req.session.usuario})
     },
