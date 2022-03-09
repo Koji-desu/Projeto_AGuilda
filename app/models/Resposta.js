@@ -3,12 +3,12 @@ module.exports = (sequelize, dataTypes)=>{
         'Resposta',
         {
             id:{
-                type: dataTypes.INTERGER,
+                type: dataTypes.INTEGER,
                 primaryKey:true,
                 autoIncrement: true
             },
-            anuncios_id: dataTypes.INTERGER,
-            usuarios_id: dataTypes.INTERGER,
+            anuncios_id: dataTypes.INTEGER,
+            usuarios_id: dataTypes.INTEGER,
             texto: dataTypes.STRING(100) 
     },{
         timestamps:true,
@@ -20,5 +20,6 @@ module.exports = (sequelize, dataTypes)=>{
         Resposta.belongsTo(models.Usuario, {foreignKey: 'usuarios_id', as: 'resposta_usuario'})
         Resposta.hasMany(models.Anuncio, {foreignKey: 'anuncios_id', as: 'resposta_anuncio'})
     }
+    return Resposta
     
 }

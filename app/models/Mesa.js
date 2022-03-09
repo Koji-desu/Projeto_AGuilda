@@ -2,7 +2,7 @@ module.exports = (sequelize, dataTypes)=>{
     const Mesa = sequelize.define(
         'Mesa',{
         id:{
-            type: dataTypes.INTERGER,
+            type: dataTypes.INTEGER,
             primaryKey:true,
             autoIncrement: true
         },
@@ -13,10 +13,11 @@ module.exports = (sequelize, dataTypes)=>{
         data_criacao:dataTypes.DATE,
         proximo_jogo:dataTypes.DATE,
 
-        chat: dataTypes.LONGTEXT,
-        rolagens: dataTypes.LONGTEXT
+        chat: dataTypes.TEXT,
+        rolagens: dataTypes.TEXT
     },{
         timestamps:false,
         tableName: 'mesas'
     })
+    return Mesa
 }

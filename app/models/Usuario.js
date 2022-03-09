@@ -2,8 +2,8 @@ module.exports = (sequelize, dataTypes)=>{
     const Usuario = sequelize.define(
         'Usuario', {
         id: {
-            type: dataTypes.INTERGER,
-            primarykey:true,
+            type: dataTypes.INTEGER,
+            primaryKey:true,
             autoIncrement: true
         },
         nome:{
@@ -29,5 +29,5 @@ module.exports = (sequelize, dataTypes)=>{
         Usuario.hasMany(models.Personagem, {foreignKey: 'usuarios_id', as: 'usuario_personagens'})
         Usuario.hasMany(models.Resposta, {foreignKey: 'usuarios_id', as: 'usuario_resposta'})
     }
-    
+     return Usuario
 }

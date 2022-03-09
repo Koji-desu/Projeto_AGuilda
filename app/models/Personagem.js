@@ -2,12 +2,12 @@ module.exports = (sequelize, dataTypes)=>{
     const Personagem = sequelize.define(
         'Personagem', {
         id:{
-            type:dataTypes.INTERGER,
+            type:dataTypes.INTEGER,
             primaryKey:true,
             autoIncrement:true,   
         },
         usuarios_id:{
-            type: dataTypes.INTERGER,
+            type: dataTypes.INTEGER,
         },
         img:{
             type: dataTypes.STRING(256)
@@ -15,23 +15,23 @@ module.exports = (sequelize, dataTypes)=>{
         nome:{
             type: dataTypes.STRING(45)
         },
-        for: dataTypes.INTERGER, // Força
-        mod_for: dataTypes.INTERGER, // Modificador de Força
-        des: dataTypes.INTERGER, // Destreza
-        mod_des: dataTypes.INTERGER, // Modificador de Destreza
-        con: dataTypes.INTERGER, // Constituição
-        mod_con: dataTypes.INTERGER, // Modificador de Constituição
-        int: dataTypes.INTERGER, // Inteligencia
-        mod_int: dataTypes.INTERGER, // Modificador de Inteligencia
-        sab: dataTypes.INTERGER, // Sabedoria
-        mod_sab: dataTypes.INTERGER, // Modificador de Sabedoria
-        car: dataTypes.INTERGER, //
-        mod_car: dataTypes.INTERGER, // Modificador de
+        for: dataTypes.INTEGER, // Força
+        mod_for: dataTypes.INTEGER, // Modificador de Força
+        des: dataTypes.INTEGER, // Destreza
+        mod_des: dataTypes.INTEGER, // Modificador de Destreza
+        con: dataTypes.INTEGER, // Constituição
+        mod_con: dataTypes.INTEGER, // Modificador de Constituição
+        int: dataTypes.INTEGER, // Inteligencia
+        mod_int: dataTypes.INTEGER, // Modificador de Inteligencia
+        sab: dataTypes.INTEGER, // Sabedoria
+        mod_sab: dataTypes.INTEGER, // Modificador de Sabedoria
+        car: dataTypes.INTEGER, //
+        mod_car: dataTypes.INTEGER, // Modificador de
         raca: dataTypes.STRING(45),
         origem: dataTypes.STRING(45),
         classe: dataTypes.STRING(45),
-        nivel: dataTypes.INTERGER,
-        vida_max: dataTypes.INTERGER,
+        nivel: dataTypes.INTEGER,
+        vida_max: dataTypes.INTEGER,
 
     },{
         timestamps:false,
@@ -41,5 +41,5 @@ module.exports = (sequelize, dataTypes)=>{
         Personagem.associate = (models)=>{
         Personagem.belongsTo(models.Usuario, {foreignKey: 'usuarios_id', as: 'personagem_usuario'})
     }
-    
+    return Personagem
 }

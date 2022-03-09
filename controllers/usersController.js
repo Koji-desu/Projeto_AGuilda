@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {Usuario} = require('../models/Usuario')
+const { Usuario } = require('../app/models/')
 const {validationResult} = require('express-validator')
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op
@@ -24,7 +24,7 @@ const controller = {
             senha
         });
 
-        console.log(resultado)
+       
 
         // Dar push para o banco de dados do novo usuario
         /* Usuario.push(usuario)
