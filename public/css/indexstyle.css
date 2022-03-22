@@ -109,9 +109,16 @@ main{
     cursor: pointer;
     border: unset;
     outline: none;
-    transition: .05s ease-in-out;
+    transition: .45s ease-in-out;
     align-self: center;
  
+}
+
+.container2 button:hover
+{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
 }
 
 .cont2-part1 {
@@ -357,3 +364,4 @@ a{
     .monteUmaMesa img{width: 290px;}
     .comunidade img{width: 312px;}
 }
+
