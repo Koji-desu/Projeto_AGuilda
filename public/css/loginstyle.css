@@ -103,7 +103,7 @@ body, html {
     font-style: normal;
     font-weight: 800;
     font-size: 45px;
-    line-height: 75px;
+    line-height: 50px;
     color: #2E4057;
     border: unset;
     outline: none;
@@ -211,4 +211,10 @@ body, html {
 .buttonSaibaMais:hover{
     background: #F18805;
     color: #2E4057;
+}
+
+@media(max-width: 574px){
+        .saibamais{display: none}
+        .loginContainer{width:100%}
+        .loginSubmit{height: 20%; font-size: 40px; line-height: 40px;}
 }
