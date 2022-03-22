@@ -4,14 +4,10 @@
 
 main{
     width: 100%;
-    min-width: 1092px;
     height: auto;
-    left: 0px;
-    top: 131px;
     background: #F2EFC7;
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
     justify-content: space-between;
 }
 
@@ -66,8 +62,7 @@ main{
     background-color: #065580;
 }
 
-.container .map{
-    width: 714.91px;
+.map{
     height: 384px;
     padding-right: 2%;
 }
@@ -336,7 +331,14 @@ main{
    
 }
 
-
 a{
     text-decoration: none;
+}
+
+@media(max-width: 1092px){
+    .container p{display: none}
+    .container .map{display:flex; align-self: flex-start; padding-right: 0%;}
+    .container{flex-direction: column-reverse; justify-content: space-around; align-items:flex-start; }
+    .container button{position: relative; margin: 0%; align-items: center; align-self: center; }
+    .container iframe{width:100%;height: 100%;}
 }
