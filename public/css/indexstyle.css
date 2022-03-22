@@ -184,7 +184,7 @@ main{
     font-family:'Germania One', cursive;
     font-weight: 300;
     font-size: 30px;
-    margin-top: -60px;
+    margin-top: -45px;
 }
 
 .comunidade > p{
@@ -348,4 +348,12 @@ a{
 
 @media(max-width: 585px){
     .cont2-part1 button{font-size: 26px; line-height: 30px; width: 100%}
+}
+
+@media(max-width: 1120px){
+    .encontrarNaGuilda{display: flex; flex-direction: column; align-items: center;  }
+    .comunidade{padding: 3% 0%;}
+    .monteUmaMesa{padding-bottom: 3%;}
+    .monteUmaMesa img{width: 290px;}
+    .comunidade img{width: 312px;}
 }
