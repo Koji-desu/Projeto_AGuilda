@@ -209,7 +209,7 @@ body, html {
 @media(max-width: 1092px){
     .saibamais{display: none}
     .conta{margin: 2% 5% 10% 5%}
-    .loginContainer{width: 80%;}
+    .loginContainer{width: 100%;}
     .container{justify-content: space-around;}
 }
 
@@ -219,7 +219,7 @@ body, html {
 
 @media(max-width: 445px){
     .conta{display:none}
-    .loginContainer{height: auto; width: 110%;}
+    .loginContainer{height: auto; width: 100%;}
 }
 
 @media(max-width: 400px){
