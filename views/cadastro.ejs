@@ -7,33 +7,35 @@
             <div class="container">
                 <div class="loginContainer">
                     <h1 class="loginTitle">Junte-se à Guilda!</h1>
+                   <span class="error">
+                        <% if(erros.length > 0 ){ %>
+                            ERRO: <%= erros[0].msg %>
+                        <% } %>
+                    </span>
                     <form action="cadastro" method="post" class="loginForm">
                         <label for="nome" class="loginInputEmail">Nome</label>
                         <input class="loginInput" type="text" id="nome" name="nome" placeholder="nome">
-                        
+
 
                         <label for="email" class="loginInputEmail">Email</label>
                         <input class="loginInput" type="email" name="email" id="email"
                             placeholder="jogador@aguilda.com.br">
-                        
+
 
 
 
                         <label for="senha" class="loginInputEmail">Senha</label>
                         <input class="loginInput" type="password" id="senha" name="senha" placeholder="********">
-                        
-                        
+
+
                         <button type="submit" class="loginSubmit">Cadastrar</button>
                     </form>
-                    
-                    <% if(locals.cadastroError){ %>
-                        <script>window.alert('digite um email e senha válido')</script>
-                    <%    } %>
-                   
-                    <p class="conta">
-                        Já possui uma conta?
-                        <a class="cadastro" href="/login"> Faça o login!</a>
-                    </p>
+
+
+                                <p class="conta">
+                                    Já possui uma conta?
+                                    <a class="cadastro" href="/login"> Faça o login!</a>
+                                </p>
 
 
 
@@ -46,10 +48,10 @@
                         <p class="textSaibaMais">
                             <b>Sua aventura começa aqui!</b>
 
-                         
+
                             Conheça mais sobre A Guilda.
 
-                         
+
 
                             <button class="buttonSaibaMais">Saiba Mais!</button>
                         </p>
@@ -58,4 +60,13 @@
                 </div>
             </div>
         </main>
+
+        <% if(erros.length > 0){   %>
+            <script>
+                const erro = <%- JSON.stringify(erros) %>;
+                const inputComErro = document.querySelector(`#${erro[0].param}`);
+                inputComErro.classList.add('input-error');
+            </script>
+            <% } %>
+    
         <%- include('partials/footer'); %>
