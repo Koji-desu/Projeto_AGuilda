@@ -34,11 +34,11 @@ body, html {
 }
 
 .loginTitle{
-    margin: 5% 2% 5% 2%;
+    margin: 2% 1% 2% 1%;
     font-family: Germania One;
     font-style: normal;
     font-weight: normal;
-    font-size: 75px;
+    font-size: 68px;;
     line-height: 87px;
     text-align: center;
     color: #FA7800;
@@ -134,11 +134,10 @@ body, html {
 }
 
 .conta{
-    
-    display: flex;
+    /* display: flex; */
     align-self: center;
     justify-content: space-between;
-    margin: 7% 5% 10% 5%;
+    margin: 0% 0% 1% 0%;
     font-family: Arvo;
     font-style: normal;
     font-weight: normal;
@@ -205,12 +204,31 @@ body, html {
     color: #2E4057;
 }
 
+.error{
+    color: #CD1520;
+    margin: 0 1%;
+    font-size: 35px;
+    font-family: Germania One;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.input-error{
+    border: 2px solid #CD1520;
+}
 
 @media(max-width: 1092px){
     .saibamais{display: none}
-    .conta{margin: 2% 5% 10% 5%}
+    
     .loginContainer{width: 100%;}
     .container{justify-content: space-around;}
+    .error{font-size: 30px;}
+}
+
+@media(max-width: 650px){
+    .loginInputEmail{height: 50px; font-size: 30px;}
+    .loginInput{height: 50px;}
+    .conta{margin: 2% 5% 10% 5%}
 }
 
 @media(max-width: 460px){
@@ -218,7 +236,7 @@ body, html {
 }
 
 @media(max-width: 445px){
-    .conta{display:none}
+    .conta{font-size:20px;}
     .loginContainer{height: auto; width: 100%;}
 }
 
@@ -226,3 +244,4 @@ body, html {
     .container{padding: 3%}
     footer nav ul li{font-size: small;}
 }
+
