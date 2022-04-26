@@ -10,9 +10,10 @@ const controller = {
     cadastrarUser: async (req, res)=>{
         const erros = validationResult(req); // Validar os dados digitados
         if(!erros.isEmpty()){ // Caso há erros renderizar a view e mapeando os erros
-            res.locals.cadastroError=true
-            return res.render('cadastro')
-        }
+           
+            return res.render('cadastro', {erros: erros.errors})
+        } 
+        
 
         // Capturar os dados digitados no form
         const {nome, email, senha} = req.body
