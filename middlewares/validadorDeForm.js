@@ -16,7 +16,7 @@ const validacoes = [
     check('nome')
     .notEmpty().withMessage("Deve ser preenchido")
     .bail()
-    .isLength({min:3}).withMessage("No minímo 3 caracteres")
+    .isLength({min:3}).withMessage("Nome deve ter no mínimo 3 caracteres")
     
 ]
 
