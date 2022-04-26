@@ -17,7 +17,7 @@ const controller = {
     
     },
     cadastro: (req,res)=>{ 
-        res.render('cadastro')
+        res.render('cadastro', {erros: []})
     },
     login: (req, res)=>{
         res.render('login')
