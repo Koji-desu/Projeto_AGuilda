@@ -6,6 +6,10 @@
 
         <div class="loginContainer">
             <h1 class="loginTitle">Boas-Vindas!</h1>
+            <% if(locals.loginError){ %>
+                <span class="error">Email ou Senha incorreto</span>
+            <% } %>
+            
             <form action="login" method="post" class="loginForm">
                 <label for="email" class="loginInputEmail">Email</label>
                 <input class="loginInput" type="email" name="email" id="email" placeholder="jogador@aguilda.com">
@@ -13,9 +17,6 @@
                 
                 <label for="senha" class="loginInputEmail">Senha</label>
                 <input class="loginInput" type="password" id="senha" name="senha" placeholder="*****">
-                <% if(locals.loginError){ %>
-                    <script>window.alert('Email ou Senha incorreto, tente novamente')</script>
-                <%    } %>
     
 
 
@@ -54,5 +55,5 @@
 
 
     </main>
-
+    
     <%- include('partials/footer'); %>
