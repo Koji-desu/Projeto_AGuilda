@@ -143,8 +143,6 @@ body, html {
 }
 
 .conta{
-    
-    display: flex;
     align-self: center;
     justify-content: space-between;
     margin: 4% 5% 5% 5%;
@@ -211,6 +209,19 @@ body, html {
 .buttonSaibaMais:hover{
     background: #F18805;
     color: #2E4057;
+}
+
+.error{
+    color: #CD1520;
+    margin: auto;
+    font-size: 35px;
+    font-family: Germania One;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.input-error{
+    border: 2px solid #CD1520;
 }
 
 @media(max-width: 574px){

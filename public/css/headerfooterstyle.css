@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
-
+root{
+    --fontRed-global: 
+}
 
 *{
     margin: 0;
@@ -110,6 +112,20 @@ header > nav > ul > li.entrar:hover{
     background-color: #065580;
 }
 
+.buttonMenu{
+    border: none;
+    background-color: transparent;
+}
+
+.buttonMenu:active{
+    transform: scale(0.9);
+}
+
+.buttonMenu i {
+    font-size: 30px;
+    color: #CD1520;
+}
+
 footer{
     background-color: #065580;
     display: flex;
@@ -142,6 +158,7 @@ footer nav ul li a {
     align-self: flex-start;
 }
 
+
 .menu3 > ul > li:hover{
     background-color: #CD1520;
 }
@@ -173,6 +190,7 @@ footer nav ul li a {
 
 @media(max-width: 320px){
     header a h1{font-size: 45px;}
+    
 }
 
 a{
