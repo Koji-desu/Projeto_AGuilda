@@ -25,8 +25,17 @@
         </nav>
         <nav class="menu3">
         <button class="buttonMenu"><i class="fa-solid fa-bars"></i></button>
+        <ul class="submenu">
+            <li class="item-menu"><a href="#"><i class="fa-regular fa-circle-question"></i>Sobre</a></li>
+            <li class="item-menu"><a href="#"><i class="fa-solid fa-user-secret"></i>Jogador</a></li>
+            <li class="item-menu"><a href="#"><i class="fa-solid fa-hat-wizard"></i>Mestre</a></li>
+            <li class="item-menu"><a href="/hub"><i class="fa-solid fa-microphone-lines"></i>Lives</a></li>
+            <li class="item-menu"><a href="/cadastro"><i class="fa-solid fa-user-plus"></i>Cadastrar</a></li>
+            <li class="item-menu"><a href="/login"><i class="fa-solid fa-arrow-right-to-bracket"></i>Entrar</a></li>
+        </ul>
         </nav>
     </header>
+
 
 </head>
 <% } else { %>
@@ -53,8 +62,25 @@
             </ul>
         </nav>
         <nav class="menu3">
-        <button>☰</button>
-        </nav>
+            <span class="saudacao"> Olá  <%= usuarios.nome %></span>
+            <button class="buttonMenu"><i class="fa-solid fa-bars"></i></button>           
+            <ul class="submenu">
+                <li class="item-menu"><a href="#"><i class="fa-regular fa-circle-question"></i>Sobre</a></li>
+                <li class="item-menu"><a href="/perfil"><i class="fa-solid fa-user-secret"></i>Perfil</a></li>
+                <li class="item-menu"><a href="#"><i class="fa-solid fa-hat-wizard"></i>Mestre</a></li>
+                <li class="item-menu"><a href="/hub"><i class="fa-solid fa-microphone-lines"></i>Lives</a></li>
+                <li class="item-menu"><a href="/logout"><i class="fa-solid fa-right-from-bracket"></i>Sair</a></li>
+            </ul>
+            </nav>
     </header>
 
+
+    
+
     <% } %>
+
+
+
+    <script src="/js/menuLogin.js"></script>
+
+
