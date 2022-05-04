@@ -84,10 +84,6 @@ header > nav.menu1 >li >a{
     color: #F2EFC7;
 }
 
-.menu4{
-    display:none;
-}
-
 nav.menu1{
     font-size: 40px;
 }
@@ -115,6 +111,8 @@ header > nav > ul > li.entrar:hover{
 .buttonMenu{
     border: none;
     background-color: transparent;
+    margin-right: 1rem
+    
 }
 
 .buttonMenu:active{
@@ -124,7 +122,64 @@ header > nav > ul > li.entrar:hover{
 .buttonMenu i {
     font-size: 30px;
     color: #CD1520;
+   
 }
+.saudacao{
+    display: none
+
+}
+
+.submenu {
+    z-index: 100;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #F2EFC7;
+    position: absolute;
+    right: 0.5rem;
+    margin-right: 8px;
+    border-radius: 5px;
+    width: 180px;
+    max-width: 210px;
+    height: 50px;
+  }
+  .submenu li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    background: #e4e1be;
+    
+  }
+  .submenu li a i {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin: 0 0.75rem 0 -0.25rem;
+    width: 25px;
+    
+  }
+  .submenu li a:hover {
+    background: #CD1520;
+    color: #000;
+    
+  }
+
+  .submenu li:first-child a {
+    border-radius: 5px 5px 0 0;
+  }
+  .submenu li:last-child a {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .submenu li:first-child a:hover {
+    border-radius: 5px 5px 0 0;
+  }
+  .submenu li:last-child a:hover {
+    border-radius: 0 0 5px 5px;
+  }
+  
 
 footer{
     background-color: #065580;
@@ -180,16 +235,30 @@ footer nav ul li a {
     .menu3 button{
         display: inline;
     }
+    .saudacao{
+        display:inline;
+        padding-right: 1px;
+    }
 
 }
 
-@media(max-width: 400px){
+@media(max-width: 450px){
     footer nav ul li{font-size: small;}
     footer nav ul{justify-content: space-around;}
+    .buttonMenu i{font-size: 25px;}
+    header a h1{font-size: 25px; margin-left: 5px;}
+    header a img{height: 50px; width: 35px;}
+    header{height: 70px;}
 }
 
-@media(max-width: 320px){
-    header a h1{font-size: 45px;}
+@media(max-width: 350px){
+    header{
+        height: 70px;
+    }
+    header a h1{font-size: 25px; margin-left: 5px;}
+    .buttonMenu i{font-size: 20px;}
+    header a img{height: 50px; width: 35px;}
+    
     
 }
 
