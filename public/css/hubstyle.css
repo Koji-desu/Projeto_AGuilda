@@ -59,21 +59,21 @@ main {
     width: 100%;
 }
 
-.caixaVideos > a {
-    text-decoration: none;
-    color: rgb(6, 85, 128);
-    font-family: 'Germania One';
-    font-family: Arvo;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    display: inline-block;
-    text-align: left;
-    width: 100%
+iframe{
+    justify-content:space-between;
+    align-items:center;
+    padding: 0 1%;
+    width: 25%;
+    height: 200px
 }
 
 div{padding: 1% 0}
+
+
+@media(max-width: 600px){
+    .caixaVideos{flex-direction:column;}
+    iframe{width: 100%; height: 250px; padding: 1%}
+}
 
 @media(max-width:450px){
     .textoBranco{font-size: 25px;}
