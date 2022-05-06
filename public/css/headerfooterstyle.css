@@ -238,8 +238,10 @@ footer nav ul li a {
     .saudacao{
         display:inline;
         padding-right: 1px;
+    
     }
-
+    
+   
 }
 
 @media(max-width: 450px){
