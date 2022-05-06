@@ -1,0 +1,34 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    width: 100%;
+    height: 1080px;
+
+}
+
+
+.leftDiv{
+    width: 49%;
+
+}
+
+.leftDiv img{
+    display: flex;
+    width: 90%;
+    padding: 10%;
+    
+
+}
+
+
+.rightDiv{
+    width: 49%;
+    
+}
+
+.rightDiv h1{
+    padding: 10%;
+    display: flex;
+    justify-content:center
+}
