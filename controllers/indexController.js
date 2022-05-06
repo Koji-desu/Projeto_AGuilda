@@ -35,6 +35,12 @@ const controller = {
     },
     perfil: (req, res)=>{
         res.render('perfil', {usuarios: req.session.usuario})
+    },
+    faq: (req, res)=>{
+        res.render('faq')
+    },
+    creditos: (req, res)=>{
+        res.render('creditos')
     }
 }
 
