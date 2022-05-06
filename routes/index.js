@@ -16,5 +16,7 @@ router.get('/logout', controllerIndex.logout)
 router.get('/anuncios', controllerIndex.anuncios)
 router.get('/hub', controllerIndex.hub)
 router.get('/perfil', controllerIndex.perfil)
+router.get('/faq', controllerIndex.faq)
+router.get('/creditos', controllerIndex.creditos)
 
 module.exports = router;
