@@ -1,42 +1,32 @@
 body{
-    width: auto;
-    height: auto;
-    left: 0px;
-    top: 0px;
-    background: #F2EFC7;
-    min-width: 1440px;
+    background-color: #f2efc7bb;
+}
+
+main{
+ 
     display: flex;
     flex-direction: row;
-    flex: 1 0 auto;
-    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color: #F2EFC7;
+    margin: 1%
 }
 
 .menuLeft{
-    position: absolute;
     width: 292px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
 }
 
 .table{
-    position: absolute;
-    width: 856px;
-    height: 1024px;
-    left: 291px;
-    top: 0px;
     border: solid #CD1502 4px;
 }
 
 .table img{
     width: 856px;
-    height: 1024px;
+    height: 780px;
 }
 
 .historico{
     width: 292px;
     height: 34px;
-    margin-top: 61px;
     background: #807f7f;
     font-family: Alegreya;
     font-style: normal;
@@ -60,13 +50,8 @@ body{
 }
 
 .navLeft{
-    position: absolute;
-    width: 291px;
     height: 55px;
-    left: 0px;
-    top: 0px;
     display: flex;
-    flex-direction: row;
     background: #CD1502;
     justify-content: space-around;
     align-items: center;
@@ -89,14 +74,13 @@ body{
 
 .navLeft > a > img {
     width: 33px;
-    top: 11px;
     text-decoration: none;
 }
 
 .chatBox{
-    position: absolute;
+    /* position: absolute; */
     width: 286px;
-    height: 700px;
+    height: 500px;
     background: #FFFEEB;
     outline: none;
     border: none;
@@ -109,8 +93,6 @@ body{
 }
 
 .mensagemBox{
-    margin-top: 700px;
-    margin-left: 8px;
     width: 276px;
     height: 104px;
     background: #FFFEEB;
@@ -125,9 +107,6 @@ body{
 }
 
 .mensagemParaTexto{
-    margin-top: 708px;
-    margin-left: 12px;
-    position: absolute;
     font-family: Alegreya;
     font-style: normal;
     font-weight: bold;
@@ -138,9 +117,6 @@ body{
 }
 
 .mensagemPara {
-    position: absolute;
-    margin-top: 708px;
-    margin-left: 50px;
     width: 65.62px;
     height: 19px;
     background: rgba(0, 132, 204, 0.7);
@@ -157,10 +133,8 @@ body{
 }
 
 .enviar{
-    position: absolute;
     width: 122.85px;
     height: 41.16px;
-    margin-left: 160px;
     background: #0084CC;
     border-radius: 9px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
@@ -181,26 +155,18 @@ body{
 }
 
 .diceRoll{
-
-    position: absolute;
-    width: 292px;
-    height: 1024px;
-    left: 1155px;
-    top: 0px;
+    height: 770px;
     display: flex;
     flex-direction: column;
 }
 
 .rolagem{
-    position: absolute;
-    width: 290px;
     height: 674px;
     background: #FFFEEB;
     outline: none;
     border: none;
     color: #CD1502;
     font-size: 25px;
-    margin-right: 0;
 }
 
 .rolagem:placeholder-shown{
@@ -208,11 +174,8 @@ body{
 }
 
 .limpar {
-    position: absolute;
-    width: 296px;
     height: 34px;
     background: #800008;
-    top: 679px;
     outline: none;
     border: none;
     font-family: Alegreya;
@@ -230,10 +193,7 @@ body{
 }
 
 .dice{
-    position: absolute;
-    width: 296px;
     height: 60px;
-    top: 750px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -251,9 +211,7 @@ body{
 }
 
 .mais{
-    position: absolute;
     margin-left: 190px;
-    top: 825px;
     width: 100px;
     height: 35px;
     background: #0084CC;
@@ -278,27 +236,22 @@ body{
 
 .nome{
     margin-left: 10px;
-    position: absolute;
     width: 155px;
     height: 34px;
-    top: 825px;
     font-family: Alegreya;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
     color: #787676;
     outline: none;
-    border: none;
     border: 1px solid #C4C4C4;
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
 }
 
 .tipo{
     margin-left: 10px;
-    position: absolute;
     width: 106px;
     height: 34px;
-    top: 880px;
     font-family: Alegreya;
     font-style: normal;
     font-size: 16px;
@@ -312,10 +265,8 @@ body{
 
 .mod{
     margin-left: 135px;
-    position: absolute;
     width: 50px;
     height: 34px;
-    top: 880px;
     font-family: Alegreya;
     font-style: normal;
     font-size: 16px;
@@ -328,9 +279,8 @@ body{
 }
 
 .salvos{
-    position: absolute;
+    /* position: absolute; */
     margin-left: 210px;
-    top: 880px;
     width: 70px;
     height: 35px;
     background: #CD1502;
@@ -365,9 +315,7 @@ body{
 }
 
 .rolar{
-    position: absolute;
-    margin-left: 50px;
-    top: 950px;
+
     width: 206px;
     height: 54px;
     background: #CD1502;
