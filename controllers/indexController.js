@@ -41,6 +41,9 @@ const controller = {
     },
     creditos: (req, res)=>{
         res.render('creditos')
+    },
+    interface: (req, res)=>{
+        res.render('interface')
     }
 }
 
