@@ -1,0 +1,97 @@
+<%- include('partials/head') %>
+<link rel="stylesheet" href="../css/interfacestyle.css">
+
+    <!-- importar header -->
+    <%- include('partials/header') %>
+
+
+    <main>
+        <!-- Lado Esquerdo -->
+        <section class="menuLeft">
+            <nav class="navLeft">
+                <a href="#"><img src="/images/conversacao.png" alt="Chat"></a>
+                <a href="#"><img src="/images/cards.png" alt="Fichas"></a>
+                <a href="#"><img src="/images/blades.png" alt="Inimigos"></a>
+                <a href="#"><img src="/images/image-gallery.png" alt="Imagens"></a>
+                <a href="#"><img src="/images/papiro.png" alt="Anotações"></a>
+                <a href="#"><img src="/images/configuracoes.png" alt="Configurações"></a>
+    
+            </nav>
+            <button class="historico">Acessar histórico</button>
+           
+    
+            <label class="chatBoxTexto" for="chatbox"></label>
+            <textarea class="chatBox" name="chatbox" id="chatbox" cols="" rows="" placeholder="Aqui seria o Chat"></textarea>
+    
+          
+            <label class="mensagemParaTexto" for="mensagemPara">Para:</label>
+            <select class="mensagemPara" name="mensagemPara" id="mensagemPara">
+                <option value="todos" selected>Todos</option>
+                <option value="j1">Jogador 1</option>
+                <option value="j2">Jogador 2</option>
+                <option value="j3">Jogador 3</option>
+            </select>
+    
+            <label for="mensagem"></label>
+            <textarea class="mensagemBox" name="mensagem" id="mensagem" cols="" rows="" placeholder="Digite sua mensagem aqui..."></textarea>
+           
+    
+            <button class="enviar" type="submit">Enviar</button>
+    
+        </section>
+    
+
+
+
+
+        <!-- Meio -->
+        <section class="table">
+            <img src="../images/dungeon-interface.png" alt="grid de batalha masmora">
+        </section>
+    
+
+
+        <!-- Lado Direito -->
+        <section class="diceRoll">
+        
+            <label class="rolagemTexto" for="rolagem"></label>
+            <textarea class="rolagem" name="rolagem" id="crolagem" cols="" rows="" placeholder="Aqui seriam as rolagens"></textarea>
+        
+            <button class="limpar">Limpar rolagens</button>
+      
+    
+            <button class="mais">+1 dado</button>
+    
+            <nav class="dice">
+                <a href="#"><img src="/images/bleach.png" alt="Botão Chat"></a>
+                <a href="#"><img src="/images/cube.png" alt=""></a>
+                <a href="#"><img src="/images/icosahedron.png" alt=""></a>
+                <a href="#"><img src="/images/dice.png" alt=""></a>
+                <a href="#"><img src="/images/dodecaedro.png" alt=""></a>
+                <a href="#"><img src="/images/icosahedron2.png" alt=""></a>
+            </nav>
+        
+    
+            <label for="nome"></label>
+            <input class="nome" type="text" name="nome" id="nome" placeholder="Nome (opcional)">
+            
+            <label for="tipo"></label>
+            <input class="tipo" type="text" name="tipo" id="tipo" placeholder="Teste (opcional)">
+    
+            <label for="mod"></label>
+            <input class="mod" type="number" name="mod" id="mod" placeholder="Mod.">
+    
+            <button class="salvos">
+                <img class="salvosImg" src="/images/salvar.png" alt="Salvar">
+            </button>
+     
+    
+            <button class="rolar">Rolar!</button>
+        
+        </section>
+
+
+    </main>
+
+
+    <%- include('partials/footer') %>
