@@ -6,7 +6,7 @@ const controllerUsers = require('../controllers/usersController')
 
 const validationForm = require('../middlewares/validadorDeForm')
 
-/* GET home page. */
+/* ROTAS. */
 router.get('/', controllerIndex.logged )
 router.get('/cadastro', controllerIndex.cadastro)
 router.post('/cadastro', validationForm, controllerUsers.cadastrarUser)
@@ -18,5 +18,6 @@ router.get('/hub', controllerIndex.hub)
 router.get('/perfil', controllerIndex.perfil)
 router.get('/faq', controllerIndex.faq)
 router.get('/creditos', controllerIndex.creditos)
+router.get('/interface', controllerIndex.interface)
 
 module.exports = router;
