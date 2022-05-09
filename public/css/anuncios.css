@@ -17,13 +17,19 @@ main{
 
 main section.sessao1{
     margin-bottom: 40px;
+    display: flex;
+    flex-direction:column;
+    background-image: url('../images/tela12.jpg');
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content:center
     
     
 }
 
 main > section > img{
     width: 100%;
-    height: 571px ;
 }
 
 main section.sessao2{
@@ -36,7 +42,7 @@ main section.sessao2>h2{
     color: #FA7800;
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-top: 15px;
+    padding: 15px 0px;
     font-size: 55px ;
 
 }
@@ -59,6 +65,13 @@ main section.sessao2 div label{
 #busca{
     width: 521px;
     height: 68px;
+    margin-bottom: 2%;
+}
+
+label:hover{cursor: pointer;}
+
+.novosJogadores{
+    margin-bottom: 2%;
 }
 
 .palavraChave{
@@ -66,6 +79,7 @@ main section.sessao2 div label{
     outline: none;
     cursor: text;
     padding-left: 10px;
+    font-size: 20px;
 }
 
 #buscar{
@@ -128,6 +142,12 @@ main section.sessao2 input::placeholder {
     
 }
 
+.sessao3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 main section.sessao3 h2{
     background-color: #2E4057;
     color: #F18805;
@@ -150,10 +170,57 @@ main section.sessao3 h2{
     font-size: 40px;
     line-height: 50px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
-    position: absolute;
     width: 440px;
     height: 150px;
-    left: 800px;
-    top: 250px;
-    text-align:start;
+    text-align: center;
+    align-self:center
 }
+
+.inputDias{
+    margin-bottom: 5%;
+}
+
+.sessao3 img{width: 80%;}
+
+@media(max-width:1092px){
+    /* sessao 1 */
+    main section.sessao1{align-items: center;}
+    .textoBranco{align-items: center;}
+
+    /* sessao2 */
+    main section.sessao2 h2{font-size:35px; padding-bottom: 2%;}
+    #busca{width:440px; margin-bottom: 2%;}
+    #buscar{width:200px;height:65px}
+    #criarAnuncio{height:65px; width:280px;}
+    main section.sessao2 div label{font-size:12px;}
+
+
+    /* sessao3 */
+    main section.sessao3 h2{font-size:35px; padding-top:8px; height:65px;}
+    .sessao3 img{width:97%; margin-right: 3%;}
+}
+
+@media(max-width:700px){
+    /* sessao1 */
+
+    /* sessao2 */
+    main section.sessao2{padding-left:20px;}
+    #busca{width:80%;height: 50px; font-size:20px;}
+    #buscar{width:140px;height:45px; font-size:25px;}
+    #criarAnuncio{height:45px;font-size: 25px; width:210px; margin-left: 40px;}
+    main section.sessao2 div label{margin-left:-10px;margin-right: 2px;}
+    input{height:12px;width:12px;}
+}
+
+@media(max-width:500px){
+    /* sessao1 */
+    .textoBranco{width: 300px;height:100px;font-size: 24px;line-height: 35px;}
+    /* sessao2 */
+    #buscar{width:100px;height:35px;font-size: 20px;}
+    #criarAnuncio{margin-left:15px; width:160px;height: 35px;font-size: 20px;}
+    .palavrinhaa{font-size:15px;}
+
+    /* sessao3 */
+    main section.sessao3 h2{font-size:25px;height:50px;}
+}
+
