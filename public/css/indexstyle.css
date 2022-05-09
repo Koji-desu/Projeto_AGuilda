@@ -338,6 +338,13 @@ main{
    
 }
 
+.encontrarNaGuilda img:hover{
+    transform: scale(1.02);
+    /* transition: .45s ease-in-out; */
+    transition: 1.25s ease-in-out;
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
 }
