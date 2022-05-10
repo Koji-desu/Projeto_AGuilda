@@ -3,14 +3,15 @@ main{
     flex-direction: row;
     justify-content:flex-start;
     width: 100%;
-    height: 2000px;
+    height: auto;
     background-color: rgb(240, 228, 228);
+    font-family: 'Germania One', cursive;
 
 }
 
 
 .leftDiv{
-    width: 49%;
+    width: 39%;
 
 }
 
@@ -24,7 +25,7 @@ main{
 
 
 .rightDiv{
-    width: 49%;
+    width: 59%;
     
 }
 
@@ -34,13 +35,134 @@ main{
     justify-content:center
 }
 
+.tormenta p{
+    font-size: 18px;
+    padding: 5%;
+}
+
 .pabloReis{
     width: 100%;
-    height: 30%
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:  3%;
+    font-family: 'Germania One', cursive;
+}
+
+.pabloReis h2{
+    color:  #222020;
+    font-weight: bold;
+
+}
+
+.pabloReis h3 i{
+    padding: 3% 0 0% 0%;
+}
+
+.pabloReis p i{
+    padding-right: 10%;
+}
+
+.pabloReis h4{
+    padding-bottom: 1%;
+}
+
+.redesSociais{
+    padding-top: 2%;
+    font-size: 22px;
+}
+
+.redesSociais a p:hover{
+    transform: scale(1.1);
+    transition: 1.25s ease-in-out;
+}
+
+.fa-hashtag{
+    color: #6cb0f0;
+    
 }
 
 .pabloReis img{
-    width: 120px;
+    width: 240px;
+    padding-bottom: 2%;
+    border-radius: 50px;
+}
+
+.gitHubOrientadores{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    padding: 3%;
+    align-items: center;
+    height: 20%;
     
-    border-radius: 200px;
+    
+}
+
+.orientadores{
+    display: flex;
+    justify-content:center;
+}
+
+.sergioMoura div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.leoCarvalho div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.sergioMoura img{width:240px;border-radius: 50px; padding-bottom: 2%;}
+.leoCarvalho img{width:240px;border-radius: 50px; padding-bottom: 2%;}
+
+
+
+.gitHubMencao{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gitHubMencao h2{
+    display: flex;
+    justify-content:center;
+    margin: 5% 0%
+}
+
+.gitHubMencao h3{
+    display: flex;
+    justify-content:center
+}
+
+.gitHubMencao p{
+    margin-top:5%;
+    display: flex;
+    justify-content:center
+}
+
+.andreDeAlmeida{margin-bottom: 3%;}
+
+.tiagoTarcisio img{width:120px;border-radius: 50px;}
+.andreDeAlmeida img{width:120px;border-radius: 50px;}
+
+
+a{
+    color:black
+}
+
+
+@media(max-width: 1092px){
+    .leftDiv{display: none}
+    .rightDiv{width: 95%}
+}
+
+@media(max-width:600px){
+    .sergioMoura img{width:90%;border-radius: 50px; padding-bottom: 2%; padding-left: 10%;}
+    .leoCarvalho img{width:90%;border-radius: 50px; padding-bottom: 2%;padding-left: 10%;}
 }
