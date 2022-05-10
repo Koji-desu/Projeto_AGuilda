@@ -224,6 +224,13 @@ body, html {
     border: 2px solid #CD1520;
 }
 
+.conta a:hover{
+    color: #CD1520
+}
+
+.loginReset:hover{
+    color: #CD1520
+}
 @media(max-width: 574px){
         .saibamais{display: none}
         .loginContainer{width:100%}
