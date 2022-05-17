@@ -13,7 +13,7 @@ const controller = {
         // }else{ 
         //     // Caso não tenha uma sessão ativa renderizar a view padrão
             return res.render('index')
-        
+    // }
     
     },
     cadastro: (req,res)=>{ 
