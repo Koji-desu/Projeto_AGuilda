@@ -97,7 +97,7 @@ summary:hover{
     .rightDiv{ width: 100%}
     .rightDiv div{margin-left: 3%;}
     .leftDiv{margin-left:5%}
-    .leftDiv img{width: 170%; height: 100%; }
+    .leftDiv img{width: 170%; height: 100%; display:none}
     summary{
         text-decoration: underline;
     }
