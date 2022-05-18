@@ -6,14 +6,14 @@ const controller = {
     logged: (req, res)=>{
 
         // // Capturar se o usuario está com uma sessão ativa
-        // if(req.session.usuario != undefined){
+        if(req.session.usuario != undefined){
 
         // // Se sim enviar informações para a view para assim imprimir o header correto. Mais info em partials/Header
-        //     return res.render('index', {usuarios: req.session.usuario})
-        // }else{ 
-        //     // Caso não tenha uma sessão ativa renderizar a view padrão
+            return res.render('index', {usuarios: req.session.usuario})
+        }else{ 
+            // Caso não tenha uma sessão ativa renderizar a view padrão
             return res.render('index')
-    // }
+    }
     
     },
     cadastro: (req,res)=>{ 
