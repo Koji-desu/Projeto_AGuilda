@@ -9,9 +9,9 @@ const validationForm = require('../middlewares/validadorDeForm')
 /* ROTAS. */
 router.get('/', controllerIndex.logged )
 router.get('/cadastro', controllerIndex.cadastro)
-router.post('/cadastro', validationForm, controllerUsers.cadastrarUser)
+// router.post('/cadastro', validationForm, controllerUsers.cadastrarUser) desativando temporiarentemente 
 router.get('/login', controllerIndex.login)
-router.post('/login', controllerUsers.logar)
+// router.post('/login', controllerUsers.logar) desativando temporiarentemente 
 router.get('/logout', controllerIndex.logout)
 router.get('/anuncios', controllerIndex.anuncios)
 router.get('/hub', controllerIndex.hub)
